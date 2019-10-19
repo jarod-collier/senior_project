@@ -13,7 +13,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.gamename",
-    "projectFile": "C:\\Users\\Owner\\Desktop\\CS\\senior_project\\braing_games.json",
+    "projectFile": "C:\\Users\\Owner\\Desktop\\CS\\senior_project\\ball_bounce\\braing_games.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -219,15 +219,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "wall_right-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "wall_right-1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "NewObject-1-0.png",
         "kind": "image",
         "metadata": "",
@@ -259,6 +250,177 @@
         "kind": "image",
         "metadata": "",
         "name": "NewFile-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "wall_right-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "wall_right-1-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "wall_right-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "wall_right-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "wall_right-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "wall_right-1-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "right_wall-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "right_wall-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_8.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_11.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_12.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_11.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_11.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "wall_left-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "wall_left-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "wall_right.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "wall_right.png",
         "smoothed": true,
         "userAdded": true
       }
@@ -293,252 +455,59 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.668
+        "zoomFactor": 0.388
       },
       "objectsGroups": [],
       "variables": [
         {
-          "name": "beginning_of_scene",
-          "value": "\"true\""
+          "name": "level",
+          "value": "1"
+        },
+        {
+          "name": "row_one_50",
+          "value": "50"
+        },
+        {
+          "name": "row_two_150",
+          "value": "150"
+        },
+        {
+          "name": "row_three_250",
+          "value": "250"
+        },
+        {
+          "name": "col_one_50",
+          "value": "50"
+        },
+        {
+          "name": "col_two_150",
+          "value": "150"
+        },
+        {
+          "name": "col_three_250",
+          "value": "250"
+        },
+        {
+          "name": "distance_between_cells",
+          "value": "100"
+        },
+        {
+          "name": "ball_is_moving",
+          "value": "\"false\""
         }
       ],
       "instances": [
         {
-          "angle": 270.711,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "socket",
-          "width": 64,
-          "x": 192,
-          "y": 320,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 544.845,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "socket",
-          "width": 64,
-          "x": 288,
-          "y": 416,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 270.711,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "socket",
-          "width": 64,
-          "x": 192,
-          "y": 256,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 270.711,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "socket",
-          "width": 64,
-          "x": 192,
-          "y": 192,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 362.043,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "socket",
-          "width": 64,
-          "x": 288,
-          "y": 96,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 362.043,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "socket",
-          "width": 64,
-          "x": 352,
-          "y": 96,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 362.043,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "socket",
-          "width": 64,
-          "x": 416,
-          "y": 96,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 544.845,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "socket",
-          "width": 64,
-          "x": 416,
-          "y": 416,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 544.845,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "socket",
-          "width": 64,
-          "x": 352,
-          "y": 416,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 447.764,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "socket",
-          "width": 64,
-          "x": 512,
-          "y": 320,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 447.764,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "socket",
-          "width": 64,
-          "x": 512,
-          "y": 256,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 447.764,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "socket",
-          "width": 64,
-          "x": 512,
-          "y": 192,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
           "angle": 0,
           "customSize": true,
-          "height": 256,
+          "height": 300,
           "layer": "",
           "locked": false,
           "name": "background",
-          "width": 256,
-          "x": 256,
-          "y": 160,
-          "zOrder": 15,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "wall_right",
-          "width": 0,
-          "x": 433,
-          "y": 339,
-          "zOrder": 24,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "wall_left",
-          "width": 0,
-          "x": 271,
-          "y": 340,
-          "zOrder": 25,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "wall_right",
-          "width": 0,
-          "x": 276,
-          "y": 268,
-          "zOrder": 26,
+          "width": 300,
+          "x": 0,
+          "y": 0,
+          "zOrder": -3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -551,74 +520,195 @@
           "locked": false,
           "name": "ball",
           "width": 32,
-          "x": 107,
-          "y": 215,
+          "x": -212,
+          "y": 38,
           "zOrder": 27,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
         {
-          "angle": 178.42,
-          "customSize": false,
-          "height": 0,
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
           "layer": "",
           "locked": false,
-          "name": "wall_left",
-          "width": 0,
-          "x": 435,
-          "y": 186,
-          "zOrder": 28,
+          "name": "exit_1",
+          "width": 100,
+          "x": 0,
+          "y": -100,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "locked": false,
+          "name": "exit_2",
+          "width": 100,
+          "x": 100,
+          "y": -100,
+          "zOrder": 32,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "locked": false,
+          "name": "exit_3",
+          "width": 100,
+          "x": 200,
+          "y": -100,
+          "zOrder": 33,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "locked": false,
+          "name": "exit_4",
+          "width": 100,
+          "x": 300,
+          "y": 0,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "locked": false,
+          "name": "exit_5",
+          "width": 100,
+          "x": 300,
+          "y": 100,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "locked": false,
+          "name": "exit_6",
+          "width": 100,
+          "x": 300,
+          "y": 200,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "locked": false,
+          "name": "exit_7",
+          "width": 100,
+          "x": 200,
+          "y": 300,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "locked": false,
+          "name": "exit_8",
+          "width": 100,
+          "x": 100,
+          "y": 300,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "locked": false,
+          "name": "exit_9",
+          "width": 100,
+          "x": 0,
+          "y": 300,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "locked": false,
+          "name": "exit_10",
+          "width": 100,
+          "x": -100,
+          "y": 200,
+          "zOrder": 40,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "locked": false,
+          "name": "exit_11",
+          "width": 100,
+          "x": -100,
+          "y": 100,
+          "zOrder": 41,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "locked": false,
+          "name": "exit_12",
+          "width": 100,
+          "x": -100,
+          "y": 0,
+          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         }
       ],
       "objects": [
-        {
-          "name": "socket",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "socket.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
         {
           "name": "background",
           "tags": "",
@@ -682,7 +772,7 @@
               "fixedRotation": false,
               "canSleep": true,
               "shape": "Circle",
-              "shapeDimensionA": 40,
+              "shapeDimensionA": 24,
               "shapeDimensionB": 0,
               "shapeOffsetX": 0,
               "shapeOffsetY": 0,
@@ -690,7 +780,7 @@
               "vertices": [],
               "density": 1,
               "friction": 0,
-              "restitution": 0,
+              "restitution": 1,
               "linearDamping": 0,
               "angularDamping": 0,
               "gravityScale": 0,
@@ -731,7 +821,7 @@
           ]
         },
         {
-          "name": "wall_right",
+          "name": "wall_left",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -745,13 +835,76 @@
               "fixedRotation": false,
               "canSleep": true,
               "shape": "Edge",
-              "shapeDimensionA": 0,
+              "shapeDimensionA": 73,
+              "shapeDimensionB": 45,
+              "shapeOffsetX": 0,
+              "shapeOffsetY": 0,
+              "polygonOrigin": "Center",
+              "vertices": [],
+              "density": 0,
+              "friction": 0,
+              "restitution": 1,
+              "linearDamping": 0,
+              "angularDamping": 0,
+              "gravityScale": 0,
+              "layers": 1,
+              "masks": 1
+            }
+          ],
+          "animations": [
+            {
+              "name": "wall_left",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "wall_left-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 30,
+                        "y": 30
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 30,
+                        "y": 30
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "right_wall",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "Physics2",
+              "type": "Physics2::Physics2Behavior",
+              "bodyType": "Static",
+              "bullet": false,
+              "fixedRotation": false,
+              "canSleep": true,
+              "shape": "Edge",
+              "shapeDimensionA": 87,
               "shapeDimensionB": 135,
               "shapeOffsetX": 0,
               "shapeOffsetY": 0,
               "polygonOrigin": "Center",
               "vertices": [],
-              "density": 1,
+              "density": 0,
               "friction": 0,
               "restitution": 1,
               "linearDamping": 0,
@@ -772,7 +925,46 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "wall_right-1.png",
+                      "image": "wall_right.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 30,
+                        "y": 30
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 30,
+                        "y": 30
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "exit_1",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "exit_1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -794,44 +986,15 @@
           ]
         },
         {
-          "name": "wall_left",
+          "name": "exit_2",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [
-            {
-              "name": "orientation",
-              "value": "\"left\""
-            }
-          ],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Static",
-              "bullet": false,
-              "fixedRotation": false,
-              "canSleep": true,
-              "shape": "Edge",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 45,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 1,
-              "friction": 0,
-              "restitution": 1,
-              "linearDamping": 0,
-              "angularDamping": 0,
-              "gravityScale": 0,
-              "layers": 1,
-              "masks": 1
-            }
-          ],
+          "variables": [],
+          "behaviors": [],
           "animations": [
             {
-              "name": "barrier",
+              "name": "",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -840,7 +1003,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "barrier-1-0.png",
+                      "image": "exit_2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -853,26 +1016,7 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 13,
-                            "y": 2.60001
-                          },
-                          {
-                            "x": 61.8,
-                            "y": 56.2
-                          },
-                          {
-                            "x": 55.4,
-                            "y": 63.4
-                          },
-                          {
-                            "x": 1.80002,
-                            "y": 13
-                          }
-                        ]
-                      ]
+                      "customCollisionMask": []
                     }
                   ]
                 }
@@ -881,39 +1025,15 @@
           ]
         },
         {
-          "name": "vertical_wall",
+          "name": "exit_3",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Static",
-              "bullet": false,
-              "fixedRotation": false,
-              "canSleep": true,
-              "shape": "Box",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 1,
-              "friction": 0,
-              "restitution": 1,
-              "linearDamping": 0,
-              "angularDamping": 0,
-              "gravityScale": 0,
-              "layers": 1,
-              "masks": 1
-            }
-          ],
+          "behaviors": [],
           "animations": [
             {
-              "name": "NewObject",
+              "name": "",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -921,8 +1041,8 @@
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewObject-1-1.png",
+                      "hasCustomCollisionMask": false,
+                      "image": "exit_3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -935,26 +1055,358 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 25,
-                            "y": 0
-                          },
-                          {
-                            "x": 40,
-                            "y": 0
-                          },
-                          {
-                            "x": 40,
-                            "y": 64
-                          },
-                          {
-                            "x": 25,
-                            "y": 64
-                          }
-                        ]
-                      ]
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "exit_4",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "exit_4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "exit_5",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "exit_5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "exit_6",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "exit_6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "exit_7",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "exit_7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "exit_8",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "exit_8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "exit_9",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "exit_9.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "exit_10",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "exit_10.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "exit_11",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "exit_11.jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "exit_12",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "exit_12.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
                     }
                   ]
                 }
@@ -967,54 +1419,236 @@
         {
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
           },
-          "target": "determine_ball_direction"
-        }
-      ],
-      "layers": [
-        {
-          "name": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": []
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "Physics2",
-          "type": "Physics2::Physics2Behavior",
-          "gravityX": 0,
-          "gravityY": 9.8,
-          "scaleX": 100,
-          "scaleY": 100
+          "comment": "Set up the scene",
+          "comment2": ""
         },
         {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ]
-    }
-  ],
-  "externalEvents": [
-    {
-      "associatedLayout": "ball_rebound",
-      "lastChangeTimeStamp": 0,
-      "name": "determine_ball_direction",
-      "events": [
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "ball_is_moving",
+                "=",
+                "\"false\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"memory_delay\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "ball_is_moving",
+                "=",
+                "\"true\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CentreCamera"
+              },
+              "parameters": [
+                "",
+                "ball",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "ball_is_moving",
+                "=",
+                "\"false\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                ".5",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CameraX"
+                  },
+                  "parameters": [
+                    "",
+                    "-",
+                    "250",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CameraY"
+                  },
+                  "parameters": [
+                    "",
+                    "-",
+                    "100",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Timer"
+              },
+              "parameters": [
+                "",
+                "5",
+                "\"memory_delay\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "wall_left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "right_wall"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Control ball movement",
+          "comment2": ""
+        },
         {
           "disabled": false,
           "folded": false,
@@ -1045,6 +1679,18 @@
                 "150"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "ball_is_moving",
+                "=",
+                "\"true\""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -1077,7 +1723,7 @@
               },
               "parameters": [
                 "ball",
-                "Bounce",
+                "",
                 "wall_left",
                 ""
               ],
@@ -1098,7 +1744,7 @@
               },
               "parameters": [
                 "ball",
-                "wall_right",
+                "right_wall",
                 "",
                 "",
                 ""
@@ -1114,18 +1760,118 @@
               },
               "parameters": [
                 "ball",
-                "Bounce",
-                "wall_right",
+                "",
+                "right_wall",
                 ""
               ],
               "subInstructions": []
             }
           ],
           "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Spawn the objects randomly",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Repeat",
+          "repeatExpression": "2",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "wall_left",
+                "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))",
+                "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "right_wall",
+                "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))",
+                "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        }
+      ],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "gravityX": 0,
+          "gravityY": 9.8,
+          "scaleX": 100,
+          "scaleY": 100
         }
       ]
     }
   ],
+  "externalEvents": [],
   "eventsFunctionsExtensions": [
     {
       "author": "@4ian",
