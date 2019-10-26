@@ -423,6 +423,15 @@
         "name": "wall_right.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "confirm.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "confirm.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1838,6 +1847,50 @@
             "g": 0,
             "r": 0
           }
+        },
+        {
+          "name": "confirm",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "scale",
+              "value": ".25"
+            }
+          ],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "confirm.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -2226,6 +2279,15 @@
         {
           "disabled": false,
           "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Initial_ball_movement"
+        },
+        {
+          "disabled": false,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -2357,7 +2419,7 @@
               "parameters": [
                 "ball_start_position",
                 "=",
-                "1"
+                "10"
               ],
               "subInstructions": []
             }
@@ -2517,25 +2579,26 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarSceneTxt"
+                "value": "Create"
               },
               "parameters": [
-                "ball_is_moving",
-                "=",
-                "\"true\""
+                "",
+                "confirm",
+                "-100",
+                "-100",
+                ""
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "AddForceVers"
+                "value": "ChangeScale"
               },
               "parameters": [
-                "ball",
-                "background",
-                "100",
-                "1"
+                "confirm",
+                "=",
+                "confirm.Variable(scale)"
               ],
               "subInstructions": []
             }
@@ -2627,25 +2690,26 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarSceneTxt"
+                "value": "Create"
               },
               "parameters": [
-                "ball_is_moving",
-                "=",
-                "\"true\""
+                "",
+                "confirm",
+                "-100",
+                "-100",
+                ""
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::LinearVelocityX"
+                "value": "ChangeScale"
               },
               "parameters": [
-                "ball",
-                "Physics2",
+                "confirm",
                 "=",
-                "150"
+                "confirm.Variable(scale)"
               ],
               "subInstructions": []
             }
@@ -2737,25 +2801,26 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarSceneTxt"
+                "value": "Create"
               },
               "parameters": [
-                "ball_is_moving",
-                "=",
-                "\"true\""
+                "",
+                "confirm",
+                "-100",
+                "-100",
+                ""
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::LinearVelocityX"
+                "value": "ChangeScale"
               },
               "parameters": [
-                "ball",
-                "Physics2",
+                "confirm",
                 "=",
-                "150"
+                "confirm.Variable(scale)"
               ],
               "subInstructions": []
             }
@@ -2847,25 +2912,26 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarSceneTxt"
+                "value": "Create"
               },
               "parameters": [
-                "ball_is_moving",
-                "=",
-                "\"true\""
+                "",
+                "confirm",
+                "-100",
+                "-100",
+                ""
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::LinearVelocityX"
+                "value": "ChangeScale"
               },
               "parameters": [
-                "ball",
-                "Physics2",
+                "confirm",
                 "=",
-                "150"
+                "confirm.Variable(scale)"
               ],
               "subInstructions": []
             }
@@ -2957,25 +3023,26 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarSceneTxt"
+                "value": "Create"
               },
               "parameters": [
-                "ball_is_moving",
-                "=",
-                "\"true\""
+                "",
+                "confirm",
+                "-100",
+                "-100",
+                ""
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::LinearVelocityX"
+                "value": "ChangeScale"
               },
               "parameters": [
-                "ball",
-                "Physics2",
+                "confirm",
                 "=",
-                "150"
+                "confirm.Variable(scale)"
               ],
               "subInstructions": []
             }
@@ -3067,25 +3134,26 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarSceneTxt"
+                "value": "Create"
               },
               "parameters": [
-                "ball_is_moving",
-                "=",
-                "\"true\""
+                "",
+                "confirm",
+                "-100",
+                "-100",
+                ""
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::LinearVelocityX"
+                "value": "ChangeScale"
               },
               "parameters": [
-                "ball",
-                "Physics2",
+                "confirm",
                 "=",
-                "150"
+                "confirm.Variable(scale)"
               ],
               "subInstructions": []
             }
@@ -3177,25 +3245,26 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarSceneTxt"
+                "value": "Create"
               },
               "parameters": [
-                "ball_is_moving",
-                "=",
-                "\"true\""
+                "",
+                "confirm",
+                "-100",
+                "-100",
+                ""
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::LinearVelocityX"
+                "value": "ChangeScale"
               },
               "parameters": [
-                "ball",
-                "Physics2",
+                "confirm",
                 "=",
-                "150"
+                "confirm.Variable(scale)"
               ],
               "subInstructions": []
             }
@@ -3287,25 +3356,26 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarSceneTxt"
+                "value": "Create"
               },
               "parameters": [
-                "ball_is_moving",
-                "=",
-                "\"true\""
+                "",
+                "confirm",
+                "-100",
+                "-100",
+                ""
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::LinearVelocityX"
+                "value": "ChangeScale"
               },
               "parameters": [
-                "ball",
-                "Physics2",
+                "confirm",
                 "=",
-                "150"
+                "confirm.Variable(scale)"
               ],
               "subInstructions": []
             }
@@ -3397,25 +3467,26 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarSceneTxt"
+                "value": "Create"
               },
               "parameters": [
-                "ball_is_moving",
-                "=",
-                "\"true\""
+                "",
+                "confirm",
+                "-100",
+                "-100",
+                ""
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::LinearVelocityX"
+                "value": "ChangeScale"
               },
               "parameters": [
-                "ball",
-                "Physics2",
+                "confirm",
                 "=",
-                "150"
+                ".confirm.Variable(scale)"
               ],
               "subInstructions": []
             }
@@ -3507,25 +3578,26 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarSceneTxt"
+                "value": "Create"
               },
               "parameters": [
-                "ball_is_moving",
-                "=",
-                "\"true\""
+                "",
+                "confirm",
+                "-100",
+                "-100",
+                ""
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::LinearVelocityX"
+                "value": "ChangeScale"
               },
               "parameters": [
-                "ball",
-                "Physics2",
+                "confirm",
                 "=",
-                "150"
+                "confirm.Variable(scale)"
               ],
               "subInstructions": []
             }
@@ -3617,25 +3689,26 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarSceneTxt"
+                "value": "Create"
               },
               "parameters": [
-                "ball_is_moving",
-                "=",
-                "\"true\""
+                "",
+                "confirm",
+                "-100",
+                "-100",
+                ""
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::LinearVelocityX"
+                "value": "ChangeScale"
               },
               "parameters": [
-                "ball",
-                "Physics2",
+                "confirm",
                 "=",
-                "150"
+                "confirm.Variable(scale)"
               ],
               "subInstructions": []
             }
@@ -3727,25 +3800,26 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarSceneTxt"
+                "value": "Create"
               },
               "parameters": [
-                "ball_is_moving",
-                "=",
-                "\"true\""
+                "",
+                "confirm",
+                "-100",
+                "-100",
+                ""
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::LinearVelocityX"
+                "value": "ChangeScale"
               },
               "parameters": [
-                "ball",
-                "Physics2",
+                "confirm",
                 "=",
-                "150"
+                "confirm.Variable(scale)"
               ],
               "subInstructions": []
             }
@@ -5257,6 +5331,327 @@
           "conditions": [],
           "actions": [],
           "events": []
+        }
+      ]
+    },
+    {
+      "associatedLayout": "ball_rebound",
+      "lastChangeTimeStamp": 0,
+      "name": "Initial_ball_movement",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "confirm",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "ball_start_position",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "ball_start_position",
+                        "=",
+                        "2"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "ball_start_position",
+                        "=",
+                        "3"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityY"
+                  },
+                  "parameters": [
+                    "ball",
+                    "Physics2",
+                    "=",
+                    "150"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "ball_start_position",
+                        "=",
+                        "5"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "ball_start_position",
+                        "=",
+                        "4"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "ball_start_position",
+                        "=",
+                        "6"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityX"
+                  },
+                  "parameters": [
+                    "ball",
+                    "Physics2",
+                    "=",
+                    "-150"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "ball_start_position",
+                        "=",
+                        "9"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "ball_start_position",
+                        "=",
+                        "8"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "ball_start_position",
+                        "=",
+                        "7"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityY"
+                  },
+                  "parameters": [
+                    "ball",
+                    "Physics2",
+                    "=",
+                    "-150"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "ball_start_position",
+                        "=",
+                        "12"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "ball_start_position",
+                        "=",
+                        "10"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "ball_start_position",
+                        "=",
+                        "11"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityX"
+                  },
+                  "parameters": [
+                    "ball",
+                    "Physics2",
+                    "=",
+                    "150"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         }
       ]
     }
