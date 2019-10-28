@@ -138,15 +138,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "ball-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ball-1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "socket-1.png",
         "kind": "image",
         "metadata": "",
@@ -432,6 +423,24 @@
         "name": "confirm.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ball-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ball-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ball_editor-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ball_editor-1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -464,7 +473,7 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.4
+        "zoomFactor": 0.3524
       },
       "objectsGroups": [
         {
@@ -758,14 +767,29 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 223,
+          "height": 87,
           "layer": "",
           "locked": false,
           "name": "Score",
-          "width": 1235,
-          "x": -369,
-          "y": -256,
+          "width": 624,
+          "x": -362,
+          "y": -72,
           "zOrder": 42,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 105,
+          "layer": "",
+          "locked": false,
+          "name": "Debug",
+          "width": 894,
+          "x": -333,
+          "y": -172,
+          "zOrder": 43,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -819,7 +843,7 @@
           "variables": [
             {
               "name": "scale_factor",
-              "value": ".25"
+              "value": "1"
             }
           ],
           "behaviors": [
@@ -849,7 +873,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "ball_editor",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -857,13 +881,13 @@
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": true,
-                      "image": "ball.jpg",
+                      "hasCustomCollisionMask": false,
+                      "image": "ball_editor-1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 112,
-                        "y": 112
+                        "x": 32,
+                        "y": 32
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -1895,6 +1919,25 @@
               ]
             }
           ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Debug",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "debug text:",
+          "font": "",
+          "characterSize": 59,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
       "events": [
@@ -1926,6 +1969,14 @@
               "parameters": [
                 ""
               ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
               "subInstructions": []
             }
           ],
@@ -2172,13 +2223,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "CollisionNP"
+                "value": "Physics2::Collision"
               },
               "parameters": [
                 "ball",
+                "Physics2",
                 "wall_left",
-                "",
-                "",
                 ""
               ],
               "subInstructions": []
@@ -2207,6 +2257,19 @@
                 "ball_has_hit_a_wall",
                 "=",
                 "\"true\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Physics2::EnableMask"
+              },
+              "parameters": [
+                "exits",
+                "Physics2",
+                "1",
+                "yes"
               ],
               "subInstructions": []
             }
@@ -2221,13 +2284,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "CollisionNP"
+                "value": "Physics2::Collision"
               },
               "parameters": [
                 "ball",
+                "Physics2",
                 "right_wall",
-                "",
-                "",
                 ""
               ],
               "subInstructions": []
@@ -2256,6 +2318,19 @@
                 "ball_has_hit_a_wall",
                 "=",
                 "\"true\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Physics2::EnableMask"
+              },
+              "parameters": [
+                "exits",
+                "Physics2",
+                "1",
+                "yes"
               ],
               "subInstructions": []
             }
@@ -2305,7 +2380,7 @@
           "comment2": ""
         },
         {
-          "disabled": true,
+          "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -2349,48 +2424,6 @@
         {
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "random_number",
-                "=",
-                "Random(100)"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "ball_start_position",
-                "=",
-                "3"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Link",
           "include": {
             "includeConfig": 0
@@ -2421,6 +2454,18 @@
                 "Score",
                 "=",
                 "\"Random number: \" + ToString(Variable(random_number))"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Debug",
+                "=",
+                "\"ball has hit a wall?\" + VariableString(ball_has_hit_a_wall)"
               ],
               "subInstructions": []
             }
