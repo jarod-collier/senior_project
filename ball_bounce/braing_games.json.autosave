@@ -841,9 +841,24 @@
           "locked": false,
           "name": "Score",
           "width": 624,
-          "x": -368,
-          "y": -264,
+          "x": 341,
+          "y": -111,
           "zOrder": 42,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "clicked_confirm_or_x",
+          "width": 0,
+          "x": -558,
+          "y": -257,
+          "zOrder": 44,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1932,7 +1947,7 @@
           "behaviors": [],
           "string": "Score: ",
           "font": "",
-          "characterSize": 81,
+          "characterSize": 80,
           "color": {
             "b": 0,
             "g": 0,
@@ -1963,6 +1978,50 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "confirm.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "red_x",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "scale",
+              "value": ".2"
+            }
+          ],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "red_x",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "red_x-1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2022,48 +2081,23 @@
           }
         },
         {
-          "name": "red_x",
+          "bold": false,
+          "italic": false,
+          "name": "clicked_confirm_or_x",
+          "smoothed": true,
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "name": "scale",
-              "value": ".2"
-            }
-          ],
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "red_x",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "red_x-1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "string": "Checkmark => confirm ball movement\nX                 => pick a different exit",
+          "font": "",
+          "characterSize": 54,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
       "events": [
@@ -2208,6 +2242,16 @@
                 "clicked_an_exit",
                 "=",
                 "\"false\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "clicked_confirm_or_x"
               ],
               "subInstructions": []
             }
@@ -3251,6 +3295,17 @@
                     "red_x.Variable(scale)"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "clicked_confirm_or_x",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -3410,6 +3465,17 @@
                     "confirm",
                     "=",
                     "confirm.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "clicked_confirm_or_x",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -3573,6 +3639,17 @@
                     "red_x.Variable(scale)"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "clicked_confirm_or_x",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -3732,6 +3809,17 @@
                     "red_x",
                     "=",
                     "red_x.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "clicked_confirm_or_x",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -3895,6 +3983,17 @@
                     "red_x.Variable(scale)"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "clicked_confirm_or_x",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -4054,6 +4153,17 @@
                     "red_x",
                     "=",
                     "red_x.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "clicked_confirm_or_x",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -4217,6 +4327,17 @@
                     "red_x.Variable(scale)"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "clicked_confirm_or_x",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -4376,6 +4497,17 @@
                     "confirm",
                     "=",
                     "confirm.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "clicked_confirm_or_x",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -4539,6 +4671,17 @@
                     "red_x.Variable(scale)"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "clicked_confirm_or_x",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -4698,6 +4841,17 @@
                     "confirm",
                     "=",
                     "confirm.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "clicked_confirm_or_x",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -4861,6 +5015,17 @@
                     "confirm.Variable(scale)"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "clicked_confirm_or_x",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -5020,6 +5185,17 @@
                     "clicked_an_exit",
                     "=",
                     "\"true\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "clicked_confirm_or_x",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -7493,6 +7669,16 @@
               "parameters": [
                 "red_x",
                 ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "clicked_confirm_or_x"
               ],
               "subInstructions": []
             }
