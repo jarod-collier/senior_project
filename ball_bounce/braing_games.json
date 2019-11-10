@@ -450,6 +450,33 @@
         "name": "lol-1.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "red_x.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "red_x.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "red_x_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "red_x_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "red_x-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "red_x-1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -578,12 +605,36 @@
           "value": "1"
         },
         {
+          "name": "ball_speed",
+          "value": "150"
+        },
+        {
           "name": "random_number",
           "value": "0"
         },
         {
-          "name": "ball_speed",
-          "value": "150"
+          "name": "show_ball",
+          "value": "\"false\""
+        },
+        {
+          "name": "clicked_an_exit",
+          "value": "\"false\""
+        },
+        {
+          "name": "clicked_confirm_ex",
+          "value": "\"false\""
+        },
+        {
+          "name": "spawn_confirm_X_y",
+          "value": "-110"
+        },
+        {
+          "name": "spawn_confirm_x",
+          "value": "-220"
+        },
+        {
+          "name": "spawn_X_x",
+          "value": "-115"
         }
       ],
       "instances": [
@@ -790,8 +841,8 @@
           "locked": false,
           "name": "Score",
           "width": 624,
-          "x": -301,
-          "y": -209,
+          "x": -368,
+          "y": -264,
           "zOrder": 42,
           "numberProperties": [],
           "stringProperties": [],
@@ -1881,7 +1932,7 @@
           "behaviors": [],
           "string": "Score: ",
           "font": "",
-          "characterSize": 60,
+          "characterSize": 81,
           "color": {
             "b": 0,
             "g": 0,
@@ -1896,7 +1947,7 @@
           "variables": [
             {
               "name": "scale",
-              "value": ".25"
+              "value": ".30"
             }
           ],
           "behaviors": [],
@@ -1969,6 +2020,50 @@
             "g": 0,
             "r": 0
           }
+        },
+        {
+          "name": "red_x",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "scale",
+              "value": ".2"
+            }
+          ],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "red_x",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "red_x-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -2091,6 +2186,30 @@
                 "Random(100)"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "show_ball",
+                "=",
+                "\"false\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "clicked_an_exit",
+                "=",
+                "\"false\""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -2121,7 +2240,7 @@
               },
               "parameters": [
                 "",
-                ".625",
+                ".5",
                 "",
                 ""
               ],
@@ -2257,6 +2376,18 @@
               },
               "parameters": [
                 "right_wall"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "show_ball",
+                "=",
+                "\"true\""
               ],
               "subInstructions": []
             }
@@ -2997,6 +3128,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "clicked_an_exit",
+                "=",
+                "\"false\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": [],
@@ -3028,53 +3171,91 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ResetTimer"
+                "value": "ModVarSceneTxt"
               },
               "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "PauseTimer"
-              },
-              "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "confirm",
-                "-100",
-                "-100",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeScale"
-              },
-              "parameters": [
-                "confirm",
+                "clicked_confirm_ex",
                 "=",
-                "confirm.Variable(scale)"
+                "\"false\""
               ],
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "clicked_an_exit",
+                    "=",
+                    "\"true\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "confirm",
+                    "Variable(spawn_confirm_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "red_x",
+                    "Variable(spawn_X_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "confirm",
+                    "=",
+                    "confirm.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "red_x",
+                    "=",
+                    "red_x.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -3108,6 +3289,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "clicked_an_exit",
+                "=",
+                "\"false\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": [],
@@ -3139,53 +3332,91 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ResetTimer"
+                "value": "ModVarSceneTxt"
               },
               "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "PauseTimer"
-              },
-              "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "confirm",
-                "-100",
-                "-100",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeScale"
-              },
-              "parameters": [
-                "confirm",
+                "clicked_confirm_ex",
                 "=",
-                "confirm.Variable(scale)"
+                "\"false\""
               ],
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "clicked_an_exit",
+                    "=",
+                    "\"true\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "red_x",
+                    "Variable(spawn_X_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "confirm",
+                    "Variable(spawn_confirm_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "red_x",
+                    "=",
+                    "red_x.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "confirm",
+                    "=",
+                    "confirm.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -3219,6 +3450,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "clicked_an_exit",
+                "=",
+                "\"false\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": [],
@@ -3250,53 +3493,91 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ResetTimer"
+                "value": "ModVarSceneTxt"
               },
               "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "PauseTimer"
-              },
-              "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "confirm",
-                "-100",
-                "-100",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeScale"
-              },
-              "parameters": [
-                "confirm",
+                "clicked_confirm_ex",
                 "=",
-                "confirm.Variable(scale)"
+                "\"false\""
               ],
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "confirm",
+                    "Variable(spawn_confirm_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "red_x",
+                    "Variable(spawn_X_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "clicked_an_exit",
+                    "=",
+                    "\"true\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "confirm",
+                    "=",
+                    "confirm.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "red_x",
+                    "=",
+                    "red_x.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -3330,6 +3611,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "clicked_an_exit",
+                "=",
+                "\"false\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": [],
@@ -3361,53 +3654,91 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ResetTimer"
+                "value": "ModVarSceneTxt"
               },
               "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "PauseTimer"
-              },
-              "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "confirm",
-                "-100",
-                "-100",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeScale"
-              },
-              "parameters": [
-                "confirm",
+                "clicked_confirm_ex",
                 "=",
-                "confirm.Variable(scale)"
+                "\"false\""
               ],
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "confirm",
+                    "Variable(spawn_confirm_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "red_x",
+                    "Variable(spawn_X_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "clicked_an_exit",
+                    "=",
+                    "\"true\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "confirm",
+                    "=",
+                    "confirm.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "red_x",
+                    "=",
+                    "red_x.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -3441,6 +3772,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "clicked_an_exit",
+                "=",
+                "\"false\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": [],
@@ -3472,53 +3815,91 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ResetTimer"
+                "value": "ModVarSceneTxt"
               },
               "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "PauseTimer"
-              },
-              "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "confirm",
-                "-100",
-                "-100",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeScale"
-              },
-              "parameters": [
-                "confirm",
+                "clicked_confirm_ex",
                 "=",
-                "confirm.Variable(scale)"
+                "\"false\""
               ],
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "clicked_an_exit",
+                    "=",
+                    "\"true\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "confirm",
+                    "Variable(spawn_confirm_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "red_x",
+                    "Variable(spawn_X_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "confirm",
+                    "=",
+                    "confirm.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "red_x",
+                    "=",
+                    "red_x.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -3552,6 +3933,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "clicked_an_exit",
+                "=",
+                "\"false\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": [],
@@ -3583,53 +3976,91 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ResetTimer"
+                "value": "ModVarSceneTxt"
               },
               "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "PauseTimer"
-              },
-              "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "confirm",
-                "-100",
-                "-100",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeScale"
-              },
-              "parameters": [
-                "confirm",
+                "clicked_confirm_ex",
                 "=",
-                "confirm.Variable(scale)"
+                "\"false\""
               ],
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "confirm",
+                    "Variable(spawn_confirm_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "red_x",
+                    "Variable(spawn_X_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "clicked_an_exit",
+                    "=",
+                    "\"true\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "confirm",
+                    "=",
+                    "confirm.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "red_x",
+                    "=",
+                    "red_x.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -3663,6 +4094,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "clicked_an_exit",
+                "=",
+                "\"false\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": [],
@@ -3694,53 +4137,91 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ResetTimer"
+                "value": "ModVarSceneTxt"
               },
               "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "PauseTimer"
-              },
-              "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "confirm",
-                "-100",
-                "-100",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeScale"
-              },
-              "parameters": [
-                "confirm",
+                "clicked_confirm_ex",
                 "=",
-                "confirm.Variable(scale)"
+                "\"false\""
               ],
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "confirm",
+                    "Variable(spawn_confirm_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "red_x",
+                    "Variable(spawn_X_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "clicked_an_exit",
+                    "=",
+                    "\"true\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "confirm",
+                    "=",
+                    "confirm.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "red_x",
+                    "=",
+                    "red_x.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -3774,6 +4255,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "clicked_an_exit",
+                "=",
+                "\"false\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": [],
@@ -3805,53 +4298,91 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ResetTimer"
+                "value": "ModVarSceneTxt"
               },
               "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "PauseTimer"
-              },
-              "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "confirm",
-                "-100",
-                "-100",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeScale"
-              },
-              "parameters": [
-                "confirm",
+                "clicked_confirm_ex",
                 "=",
-                "confirm.Variable(scale)"
+                "\"false\""
               ],
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "clicked_an_exit",
+                    "=",
+                    "\"true\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "confirm",
+                    "Variable(spawn_confirm_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "red_x",
+                    "Variable(spawn_X_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "red_x",
+                    "=",
+                    "red_x.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "confirm",
+                    "=",
+                    "confirm.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -3885,6 +4416,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "clicked_an_exit",
+                "=",
+                "\"false\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": [],
@@ -3916,53 +4459,91 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ResetTimer"
+                "value": "ModVarSceneTxt"
               },
               "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "PauseTimer"
-              },
-              "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "confirm",
-                "-100",
-                "-100",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeScale"
-              },
-              "parameters": [
-                "confirm",
+                "clicked_confirm_ex",
                 "=",
-                "confirm.Variable(scale)"
+                "\"false\""
               ],
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "clicked_an_exit",
+                    "=",
+                    "\"true\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "confirm",
+                    "Variable(spawn_confirm_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "red_x",
+                    "Variable(spawn_X_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "confirm",
+                    "=",
+                    "confirm.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "red_x",
+                    "=",
+                    "red_x.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -3996,6 +4577,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "clicked_an_exit",
+                "=",
+                "\"false\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": [],
@@ -4027,53 +4620,91 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ResetTimer"
+                "value": "ModVarSceneTxt"
               },
               "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "PauseTimer"
-              },
-              "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "confirm",
-                "-100",
-                "-100",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeScale"
-              },
-              "parameters": [
-                "confirm",
+                "clicked_confirm_ex",
                 "=",
-                "confirm.Variable(scale)"
+                "\"false\""
               ],
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "clicked_an_exit",
+                    "=",
+                    "\"true\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "confirm",
+                    "Variable(spawn_confirm_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "red_x",
+                    "Variable(spawn_X_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "red_x",
+                    "=",
+                    "red_x.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "confirm",
+                    "=",
+                    "confirm.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -4101,6 +4732,18 @@
               "parameters": [
                 "",
                 "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "clicked_an_exit",
+                "=",
+                "\"false\""
               ],
               "subInstructions": []
             },
@@ -4138,53 +4781,91 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ResetTimer"
+                "value": "ModVarSceneTxt"
               },
               "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "PauseTimer"
-              },
-              "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "confirm",
-                "-100",
-                "-100",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeScale"
-              },
-              "parameters": [
-                "confirm",
+                "clicked_confirm_ex",
                 "=",
-                "confirm.Variable(scale)"
+                "\"false\""
               ],
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "clicked_an_exit",
+                    "=",
+                    "\"true\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "confirm",
+                    "Variable(spawn_confirm_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "red_x",
+                    "Variable(spawn_X_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "red_x",
+                    "=",
+                    "red_x.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "confirm",
+                    "=",
+                    "confirm.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -4212,6 +4893,18 @@
               "parameters": [
                 "",
                 "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "clicked_an_exit",
+                "=",
+                "\"false\""
               ],
               "subInstructions": []
             },
@@ -4249,53 +4942,91 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ResetTimer"
+                "value": "ModVarSceneTxt"
               },
               "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "PauseTimer"
-              },
-              "parameters": [
-                "",
-                "\"memory_delay\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "confirm",
-                "-100",
-                "-100",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeScale"
-              },
-              "parameters": [
-                "confirm",
+                "clicked_confirm_ex",
                 "=",
-                "confirm.Variable(scale)"
+                "\"false\""
               ],
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "confirm",
+                    "Variable(spawn_confirm_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "red_x",
+                    "Variable(spawn_X_x)",
+                    "Variable(spawn_confirm_X_y)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "red_x",
+                    "=",
+                    "red_x.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "confirm",
+                    "=",
+                    "confirm.Variable(scale)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "clicked_an_exit",
+                    "=",
+                    "\"true\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -4452,6 +5183,18 @@
                     ""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Score",
+                    "-",
+                    "100"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -4596,6 +5339,18 @@
                   "parameters": [
                     "exits",
                     ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Score",
+                    "-",
+                    "100"
                   ],
                   "subInstructions": []
                 }
@@ -4744,6 +5499,18 @@
                     ""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Score",
+                    "-",
+                    "100"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -4888,6 +5655,18 @@
                   "parameters": [
                     "exits",
                     ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Score",
+                    "-",
+                    "100"
                   ],
                   "subInstructions": []
                 }
@@ -5036,6 +5815,18 @@
                     ""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Score",
+                    "-",
+                    "100"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -5180,6 +5971,18 @@
                   "parameters": [
                     "exits",
                     ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Score",
+                    "-",
+                    "100"
                   ],
                   "subInstructions": []
                 }
@@ -5328,6 +6131,18 @@
                     ""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Score",
+                    "-",
+                    "100"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -5472,6 +6287,18 @@
                   "parameters": [
                     "exits",
                     ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Score",
+                    "-",
+                    "100"
                   ],
                   "subInstructions": []
                 }
@@ -5620,6 +6447,18 @@
                     ""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Score",
+                    "-",
+                    "100"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -5764,6 +6603,18 @@
                   "parameters": [
                     "exits",
                     ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Score",
+                    "-",
+                    "100"
                   ],
                   "subInstructions": []
                 }
@@ -5912,6 +6763,18 @@
                     ""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Score",
+                    "-",
+                    "100"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -6056,6 +6919,18 @@
                   "parameters": [
                     "exits",
                     ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Score",
+                    "-",
+                    "100"
                   ],
                   "subInstructions": []
                 }
@@ -6117,7 +6992,42 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"memory_delay\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"memory_delay\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "clicked_confirm_ex",
+                "=",
+                "\"true\""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": [
             {
               "disabled": false,
@@ -6457,6 +7367,150 @@
             "textG": 0,
             "textR": 0
           },
+          "comment": "Respawn all exits if user wants to try again",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "red_x",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "exits",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "clicked_an_exit",
+                "=",
+                "\"false\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "clicked_confirm_ex",
+                "=",
+                "\"true\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "clicked_confirm_ex",
+                "=",
+                "\"true\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "confirm",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "red_x",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
           "comment": "Spawn walls vertically first column",
           "comment2": ""
         },
@@ -6536,7 +7590,7 @@
                   "parameters": [
                     "",
                     "wall_left",
-                    "Variable(row_one_50) - 5",
+                    "Variable(row_one_50)",
                     "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))",
                     ""
                   ],
@@ -6674,7 +7728,7 @@
                   "parameters": [
                     "",
                     "wall_left",
-                    "Variable(row_two_150) - 5",
+                    "Variable(row_two_150)",
                     "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))",
                     ""
                   ],
@@ -6812,7 +7866,7 @@
                   "parameters": [
                     "",
                     "wall_left",
-                    "Variable(row_three_250) - 5",
+                    "Variable(row_three_250)",
                     "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))",
                     ""
                   ],
@@ -6950,7 +8004,7 @@
                   "parameters": [
                     "",
                     "wall_left",
-                    "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells)) - 5",
+                    "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))",
                     "Variable(col_one_50)",
                     ""
                   ],
@@ -7088,7 +8142,7 @@
                   "parameters": [
                     "",
                     "wall_left",
-                    "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells)) - 5",
+                    "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))",
                     "Variable(col_two_150)",
                     ""
                   ],
@@ -7226,7 +8280,7 @@
                   "parameters": [
                     "",
                     "wall_left",
-                    "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells)) - 5",
+                    "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))",
                     "Variable(col_three_250)",
                     ""
                   ],
@@ -7308,6 +8362,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "show_ball",
+                "=",
+                "\"true\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": [],
@@ -7359,6 +8425,18 @@
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "show_ball",
+                "=",
+                "\"true\""
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
@@ -7428,6 +8506,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "show_ball",
+                "=",
+                "\"true\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
@@ -7491,6 +8581,18 @@
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "show_ball",
+                "=",
+                "\"true\""
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
@@ -7560,6 +8662,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "show_ball",
+                "=",
+                "\"true\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
@@ -7623,6 +8737,18 @@
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "show_ball",
+                "=",
+                "\"true\""
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
@@ -7692,6 +8818,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "show_ball",
+                "=",
+                "\"true\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
@@ -7755,6 +8893,18 @@
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "show_ball",
+                "=",
+                "\"true\""
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
@@ -7824,6 +8974,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "show_ball",
+                "=",
+                "\"true\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
@@ -7887,6 +9049,18 @@
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "show_ball",
+                "=",
+                "\"true\""
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
@@ -7956,6 +9130,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "show_ball",
+                "=",
+                "\"true\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
@@ -8019,6 +9205,18 @@
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "show_ball",
+                "=",
+                "\"true\""
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
