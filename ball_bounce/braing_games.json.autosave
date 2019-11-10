@@ -482,7 +482,7 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.3524
+        "zoomFactor": 0.3224
       },
       "objectsGroups": [
         {
@@ -577,8 +577,8 @@
           "value": "0"
         },
         {
-          "name": "start_of_scene",
-          "value": "\"true\""
+          "name": "ball_speed",
+          "value": "150"
         }
       ],
       "instances": [
@@ -607,7 +607,7 @@
           "width": 100,
           "x": 0,
           "y": -100,
-          "zOrder": 11,
+          "zOrder": -7,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -622,7 +622,7 @@
           "width": 100,
           "x": 100,
           "y": -100,
-          "zOrder": 32,
+          "zOrder": -20,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -637,7 +637,7 @@
           "width": 100,
           "x": 200,
           "y": -100,
-          "zOrder": 33,
+          "zOrder": -18,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -652,7 +652,7 @@
           "width": 100,
           "x": 300,
           "y": 0,
-          "zOrder": 34,
+          "zOrder": -9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -667,7 +667,7 @@
           "width": 100,
           "x": 300,
           "y": 100,
-          "zOrder": 35,
+          "zOrder": -17,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -682,7 +682,7 @@
           "width": 100,
           "x": 300,
           "y": 200,
-          "zOrder": 36,
+          "zOrder": -29,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -697,7 +697,7 @@
           "width": 100,
           "x": 200,
           "y": 300,
-          "zOrder": 37,
+          "zOrder": -17,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -712,7 +712,7 @@
           "width": 100,
           "x": 100,
           "y": 300,
-          "zOrder": 38,
+          "zOrder": -15,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -727,7 +727,7 @@
           "width": 100,
           "x": 0,
           "y": 300,
-          "zOrder": 39,
+          "zOrder": -5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -742,7 +742,7 @@
           "width": 100,
           "x": -100,
           "y": 200,
-          "zOrder": 40,
+          "zOrder": -3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -757,7 +757,7 @@
           "width": 100,
           "x": -100,
           "y": 100,
-          "zOrder": 41,
+          "zOrder": -14,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -772,7 +772,7 @@
           "width": 100,
           "x": -100,
           "y": 0,
-          "zOrder": 1,
+          "zOrder": -17,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -785,8 +785,8 @@
           "locked": false,
           "name": "Score",
           "width": 624,
-          "x": -362,
-          "y": -72,
+          "x": -498,
+          "y": 57,
           "zOrder": 42,
           "numberProperties": [],
           "stringProperties": [],
@@ -800,9 +800,24 @@
           "locked": false,
           "name": "Debug",
           "width": 894,
-          "x": -333,
-          "y": -172,
+          "x": -494,
+          "y": -98,
           "zOrder": 43,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "debug_2",
+          "width": 0,
+          "x": -513,
+          "y": 264,
+          "zOrder": 44,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -856,34 +871,14 @@
           "variables": [
             {
               "name": "scale_factor",
-              "value": "1"
-            }
-          ],
-          "behaviors": [
+              "value": ".5"
+            },
             {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Dynamic",
-              "bullet": false,
-              "fixedRotation": false,
-              "canSleep": true,
-              "shape": "Circle",
-              "shapeDimensionA": 24,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 1,
-              "friction": 0,
-              "restitution": 1,
-              "linearDamping": 0,
-              "angularDamping": 0,
-              "gravityScale": 0,
-              "layers": 1,
-              "masks": 1
+              "name": "current_direction",
+              "value": "\"any\""
             }
           ],
+          "behaviors": [],
           "animations": [
             {
               "name": "ball_editor",
@@ -894,7 +889,7 @@
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "ball_editor-1.png",
                       "points": [],
                       "originPoint": {
@@ -908,7 +903,26 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 23.4,
+                            "y": 23.4
+                          },
+                          {
+                            "x": 42.6,
+                            "y": 23.4
+                          },
+                          {
+                            "x": 41,
+                            "y": 40.2
+                          },
+                          {
+                            "x": 22.6,
+                            "y": 39.4
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -924,27 +938,13 @@
           "variables": [],
           "behaviors": [
             {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Static",
-              "bullet": false,
-              "fixedRotation": false,
-              "canSleep": true,
-              "shape": "Edge",
-              "shapeDimensionA": 80,
-              "shapeDimensionB": 45,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 0,
-              "friction": 0,
-              "restitution": 1,
-              "linearDamping": 0,
-              "angularDamping": 0,
-              "gravityScale": 0,
-              "layers": 1,
-              "masks": 1
+              "name": "Bounce",
+              "type": "Bounce::Bounce",
+              "OldX": 0,
+              "OldY": 0,
+              "OldForceAngle": 0,
+              "OldForceLength": 0,
+              "NormalAngle": 0
             }
           ],
           "animations": [
@@ -971,7 +971,26 @@
                         "x": 30,
                         "y": 30
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15.4,
+                            "y": 7.40001
+                          },
+                          {
+                            "x": 57.8,
+                            "y": 46.6
+                          },
+                          {
+                            "x": 49.8,
+                            "y": 59.4
+                          },
+                          {
+                            "x": 5.80002,
+                            "y": 20.2
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -987,27 +1006,13 @@
           "variables": [],
           "behaviors": [
             {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Static",
-              "bullet": false,
-              "fixedRotation": false,
-              "canSleep": true,
-              "shape": "Edge",
-              "shapeDimensionA": 80,
-              "shapeDimensionB": 135,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 0,
-              "friction": 0,
-              "restitution": 1,
-              "linearDamping": 0,
-              "angularDamping": 0,
-              "gravityScale": 0,
-              "layers": 1,
-              "masks": 1
+              "name": "Bounce",
+              "type": "Bounce::Bounce",
+              "OldX": 0,
+              "OldY": 0,
+              "OldForceAngle": 0,
+              "OldForceLength": 0,
+              "NormalAngle": 0
             }
           ],
           "animations": [
@@ -1034,7 +1039,26 @@
                         "x": 30,
                         "y": 30
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 49,
+                            "y": 6.60001
+                          },
+                          {
+                            "x": 58.6,
+                            "y": 14.6
+                          },
+                          {
+                            "x": 14.6,
+                            "y": 60.2
+                          },
+                          {
+                            "x": 4.19999,
+                            "y": 49
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -1709,8 +1733,8 @@
                       "points": [
                         {
                           "name": "ball_start",
-                          "x": -234,
-                          "y": 134
+                          "x": -219,
+                          "y": 104
                         }
                       ],
                       "originPoint": {
@@ -1946,6 +1970,25 @@
           "string": "debug text:",
           "font": "",
           "characterSize": 59,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "debug_2",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "debug_2: ",
+          "font": "",
+          "characterSize": 57,
           "color": {
             "b": 0,
             "g": 0,
@@ -2268,31 +2311,27 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::Collision"
+                "value": "CollisionNP"
               },
               "parameters": [
                 "ball",
-                "Physics2",
                 "wall_left",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Bounce::Bounce::BounceOff"
-              },
-              "parameters": [
-                "ball",
+                "wall_left",
                 "",
-                "wall_left",
                 ""
               ],
               "subInstructions": []
             },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
             {
               "type": {
                 "inverted": false,
@@ -2317,9 +2356,288 @@
                 "yes"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Arreter"
+              },
+              "parameters": [
+                "ball"
+              ],
+              "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "ball",
+                    "current_direction",
+                    "=",
+                    "\"right\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "ball",
+                        "0 - Variable(ball_speed)",
+                        "Variable(ball_speed)",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "ball",
+                        "current_direction",
+                        "=",
+                        "\"down\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "ball",
+                    "current_direction",
+                    "=",
+                    "\"left\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "ball",
+                        "Variable(ball_speed)",
+                        "0 - Variable(ball_speed)",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "ball",
+                        "current_direction",
+                        "=",
+                        "\"up\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "ball",
+                    "current_direction",
+                    "=",
+                    "\"up\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "ball",
+                        "0 - Variable(ball_speed)",
+                        "0",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "ball",
+                        "current_direction",
+                        "=",
+                        "\"left\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "ball",
+                    "current_direction",
+                    "=",
+                    "\"down\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "ball",
+                        "Variable(ball_speed)",
+                        "0",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "ball",
+                        "current_direction",
+                        "=",
+                        "\"right\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ]
         },
         {
           "disabled": false,
@@ -2329,31 +2647,27 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::Collision"
+                "value": "CollisionNP"
               },
               "parameters": [
                 "ball",
-                "Physics2",
                 "right_wall",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Bounce::Bounce::BounceOff"
-              },
-              "parameters": [
-                "ball",
+                "right_wall",
                 "",
-                "right_wall",
                 ""
               ],
               "subInstructions": []
             },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
             {
               "type": {
                 "inverted": false,
@@ -2378,9 +2692,288 @@
                 "yes"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Arreter"
+              },
+              "parameters": [
+                "ball"
+              ],
+              "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "ball",
+                    "current_direction",
+                    "=",
+                    "\"right\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "ball",
+                        "0 - Variable(ball_speed)",
+                        "0 - Variable(ball_speed)",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "ball",
+                        "current_direction",
+                        "=",
+                        "\"up\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "ball",
+                    "current_direction",
+                    "=",
+                    "\"left\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "ball",
+                        "Variable(ball_speed)",
+                        "Variable(ball_speed)",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "ball",
+                        "current_direction",
+                        "=",
+                        "\"down\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "ball",
+                    "current_direction",
+                    "=",
+                    "\"up\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "ball",
+                        "Variable(ball_speed)",
+                        "0",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "ball",
+                        "current_direction",
+                        "=",
+                        "\"right\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "ball",
+                    "current_direction",
+                    "=",
+                    "\"down\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "ball",
+                        "0 - Variable(ball_speed)",
+                        "0",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "ball",
+                        "current_direction",
+                        "=",
+                        "\"left\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ]
         },
         {
           "disabled": false,
@@ -3752,12 +4345,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::Collision"
+                "value": "CollisionNP"
               },
               "parameters": [
                 "ball",
-                "Physics2",
                 "exit_1",
+                "exit_1",
+                "",
                 ""
               ],
               "subInstructions": []
@@ -3863,12 +4457,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::Collision"
+                "value": "CollisionNP"
               },
               "parameters": [
                 "ball",
-                "Physics2",
                 "exit_2",
+                "exit_2",
+                "",
                 ""
               ],
               "subInstructions": []
@@ -3974,12 +4569,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::Collision"
+                "value": "CollisionNP"
               },
               "parameters": [
                 "ball",
-                "Physics2",
                 "exit_3",
+                "exit_3",
+                "",
                 ""
               ],
               "subInstructions": []
@@ -4085,12 +4681,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::Collision"
+                "value": "CollisionNP"
               },
               "parameters": [
                 "ball",
-                "Physics2",
                 "exit_4",
+                "exit_4",
+                "",
                 ""
               ],
               "subInstructions": []
@@ -4196,12 +4793,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::Collision"
+                "value": "CollisionNP"
               },
               "parameters": [
                 "ball",
-                "Physics2",
                 "exit_5",
+                "exit_5",
+                "",
                 ""
               ],
               "subInstructions": []
@@ -4307,12 +4905,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::Collision"
+                "value": "CollisionNP"
               },
               "parameters": [
                 "ball",
-                "Physics2",
                 "exit_6",
+                "exit_6",
+                "",
                 ""
               ],
               "subInstructions": []
@@ -4418,12 +5017,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::Collision"
+                "value": "CollisionNP"
               },
               "parameters": [
                 "ball",
-                "Physics2",
                 "exit_7",
+                "exit_7",
+                "",
                 ""
               ],
               "subInstructions": []
@@ -4529,12 +5129,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::Collision"
+                "value": "CollisionNP"
               },
               "parameters": [
                 "ball",
-                "Physics2",
                 "exit_8",
+                "exit_8",
+                "",
                 ""
               ],
               "subInstructions": []
@@ -4640,12 +5241,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::Collision"
+                "value": "CollisionNP"
               },
               "parameters": [
                 "ball",
-                "Physics2",
                 "exit_9",
+                "exit_9exit_9",
+                "",
                 ""
               ],
               "subInstructions": []
@@ -4751,12 +5353,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::Collision"
+                "value": "CollisionNP"
               },
               "parameters": [
                 "ball",
-                "Physics2",
                 "exit_10",
+                "exit_10",
+                "",
                 ""
               ],
               "subInstructions": []
@@ -4862,12 +5465,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::Collision"
+                "value": "CollisionNP"
               },
               "parameters": [
                 "ball",
-                "Physics2",
                 "exit_11",
+                "exit_11",
+                "",
                 ""
               ],
               "subInstructions": []
@@ -4973,12 +5577,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Physics2::Collision"
+                "value": "CollisionNP"
               },
               "parameters": [
                 "ball",
-                "Physics2",
                 "exit_12",
+                "exit_12",
+                "",
                 ""
               ],
               "subInstructions": []
@@ -5186,13 +5791,26 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Physics2::LinearVelocityY"
+                    "value": "AddForceXY"
                   },
                   "parameters": [
                     "ball",
-                    "Physics2",
+                    "0",
+                    "Variable(ball_speed)",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjetTxt"
+                  },
+                  "parameters": [
+                    "ball",
+                    "current_direction",
                     "=",
-                    "150"
+                    "\"down\""
                   ],
                   "subInstructions": []
                 }
@@ -5254,13 +5872,26 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Physics2::LinearVelocityX"
+                    "value": "AddForceXY"
                   },
                   "parameters": [
                     "ball",
-                    "Physics2",
+                    "0 - Variable(ball_speed)",
+                    "0",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjetTxt"
+                  },
+                  "parameters": [
+                    "ball",
+                    "current_direction",
                     "=",
-                    "-150"
+                    "\"left\""
                   ],
                   "subInstructions": []
                 }
@@ -5322,13 +5953,26 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Physics2::LinearVelocityY"
+                    "value": "AddForceXY"
                   },
                   "parameters": [
                     "ball",
-                    "Physics2",
+                    "0",
+                    "0 - Variable(ball_speed)",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjetTxt"
+                  },
+                  "parameters": [
+                    "ball",
+                    "current_direction",
                     "=",
-                    "-150"
+                    "\"up\""
                   ],
                   "subInstructions": []
                 }
@@ -5390,13 +6034,26 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Physics2::LinearVelocityX"
+                    "value": "AddForceXY"
                   },
                   "parameters": [
                     "ball",
-                    "Physics2",
+                    "Variable(ball_speed)",
+                    "0",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjetTxt"
+                  },
+                  "parameters": [
+                    "ball",
+                    "current_direction",
                     "=",
-                    "150"
+                    "\"right\""
                   ],
                   "subInstructions": []
                 }
@@ -5496,7 +6153,7 @@
                   "parameters": [
                     "",
                     "wall_left",
-                    "Variable(row_one_50)",
+                    "Variable(row_one_50) - 5",
                     "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))",
                     ""
                   ],
@@ -5634,7 +6291,7 @@
                   "parameters": [
                     "",
                     "wall_left",
-                    "Variable(row_two_150)",
+                    "Variable(row_two_150) - 5",
                     "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))",
                     ""
                   ],
@@ -5772,7 +6429,7 @@
                   "parameters": [
                     "",
                     "wall_left",
-                    "Variable(row_three_250)",
+                    "Variable(row_three_250) - 5",
                     "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))",
                     ""
                   ],
@@ -5910,7 +6567,7 @@
                   "parameters": [
                     "",
                     "wall_left",
-                    "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))",
+                    "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells)) - 5",
                     "Variable(col_one_50)",
                     ""
                   ],
@@ -6048,7 +6705,7 @@
                   "parameters": [
                     "",
                     "wall_left",
-                    "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))",
+                    "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells)) - 5",
                     "Variable(col_two_150)",
                     ""
                   ],
@@ -6186,7 +6843,7 @@
                   "parameters": [
                     "",
                     "wall_left",
-                    "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))",
+                    "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells)) - 5",
                     "Variable(col_three_250)",
                     ""
                   ],
@@ -7069,7 +7726,31 @@
               "parameters": [
                 "Debug",
                 "=",
-                "\"ball has hit a wall?\" + VariableString(ball_has_hit_a_wall)"
+                "\"current ball direction: \" + ball.VariableString(current_direction)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Score",
+                "=",
+                "\"Current Random number: \" + ToString(Variable(random_number))"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "debug_2",
+                "=",
+                "\"has ball hit a wall: \" + VariableString(ball_has_hit_a_wall)"
               ],
               "subInstructions": []
             }
@@ -7097,6 +7778,10 @@
         }
       ],
       "behaviorsSharedData": [
+        {
+          "name": "Bounce",
+          "type": "Bounce::Bounce"
+        },
         {
           "name": "Physics2",
           "type": "Physics2::Physics2Behavior",
