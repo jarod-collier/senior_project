@@ -183,15 +183,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "border-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "border-1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "barrier-1.png",
         "kind": "image",
         "metadata": "",
@@ -288,87 +279,6 @@
         "name": "exit_1.png",
         "smoothed": true,
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "exit_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "exit_2.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "exit_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "exit_3.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "exit_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "exit_4.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "exit_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "exit_5.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "exit_6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "exit_6.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "exit_7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "exit_7.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "exit_8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "exit_8.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "exit_9.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "exit_9.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "exit_10.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "exit_10.png",
-        "smoothed": true,
-        "userAdded": false
       },
       {
         "alwaysLoaded": false,
@@ -477,6 +387,402 @@
         "name": "red_x-1.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "space_background.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "space_background.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_1-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_11-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_11-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exit_12-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "exit_12-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "border-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "border-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rocket_window_middle.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "rocket_window_middle.PNG",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "right-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "right-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rocket_window_left.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "rocket_window_left.PNG",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rocket_window_behind.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "rocket_window_behind.PNG",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rocket_window_right.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "rocket_window_right.PNG",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "up-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "up-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "up-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "up-2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "up-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "up-3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "up-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "up-4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rocket_up_behind.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rocket_up_behind.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rocket_up_left.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rocket_up_left.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rocket_up_middle.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "rocket_up_middle.PNG",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rocket_up_right.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rocket_up_right.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rocket_right_behind.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "rocket_right_behind.PNG",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rocket_right_left.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "rocket_right_left.PNG",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rocket_right_middle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rocket_right_middle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rocket_right_right.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "rocket_right_right.PNG",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rocket_down_behind.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "rocket_down_behind.PNG",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rocket_down_left.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "rocket_down_left.PNG",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rocket_down_middle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rocket_down_middle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rocket_down_right.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "rocket_down_right.PNG",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rocket_left_behind.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "rocket_left_behind.PNG",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rocket_left_left.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "rocket_left_left.PNG",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rocket_left_middle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rocket_left_middle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rocket_left_right.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "rocket_left_right.PNG",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "satellite_left.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "satellite_left.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "satellite_right.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "satellite_right.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "wall_left-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "wall_left-1-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "satellite_right.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "satellite_right.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "satellite_left.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "satellite_left.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -491,18 +797,18 @@
   ],
   "layouts": [
     {
-      "b": 51,
+      "b": 255,
       "disableInputWhenNotFocused": true,
       "mangledName": "ball_95rebound",
       "name": "ball_rebound",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
-      "r": 221,
+      "r": 255,
       "standardSortMethod": true,
       "stopSoundsOnStartup": false,
       "title": "",
-      "v": 130,
+      "v": 255,
       "uiSettings": {
         "grid": false,
         "gridB": 255,
@@ -514,7 +820,7 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.3224
+        "zoomFactor": 0.3524
       },
       "objectsGroups": [
         {
@@ -635,6 +941,14 @@
         {
           "name": "spawn_X_x",
           "value": "-115"
+        },
+        {
+          "name": "ball_direction",
+          "value": "\"not sure yet\""
+        },
+        {
+          "name": "satellite_scale",
+          "value": ".275"
         }
       ],
       "instances": [
@@ -862,6 +1176,51 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "space_background",
+          "width": 0,
+          "x": -1451,
+          "y": -786,
+          "zOrder": -832,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Debug",
+          "width": 0,
+          "x": -588,
+          "y": 426,
+          "zOrder": 45,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "debug_2",
+          "width": 0,
+          "x": -567,
+          "y": 59,
+          "zOrder": 46,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -905,14 +1264,14 @@
           ]
         },
         {
-          "name": "ball",
+          "name": "rocket",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [
             {
               "name": "scale_factor",
-              "value": ".5"
+              "value": ".25"
             },
             {
               "name": "current_direction",
@@ -922,21 +1281,21 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "ball_editor",
+              "name": "up",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "ball_editor-1.png",
+                      "image": "rocket_up_behind.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 32,
-                        "y": 32
+                        "x": 196,
+                        "y": 248
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -947,20 +1306,596 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 23.4,
-                            "y": 23.4
+                            "x": 163.8,
+                            "y": 131.6
                           },
                           {
-                            "x": 42.6,
-                            "y": 23.4
+                            "x": 223,
+                            "y": 131.6
                           },
                           {
-                            "x": 41,
-                            "y": 40.2
+                            "x": 226.067,
+                            "y": 233.867
                           },
                           {
-                            "x": 22.6,
-                            "y": 39.4
+                            "x": 164.2,
+                            "y": 234.933
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "rocket_up_left.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 196,
+                        "y": 248
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 163.8,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 223,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 226.067,
+                            "y": 233.867
+                          },
+                          {
+                            "x": 164.2,
+                            "y": 234.933
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "rocket_up_middle.PNG",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 196,
+                        "y": 248
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 163.8,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 223,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 226.067,
+                            "y": 233.867
+                          },
+                          {
+                            "x": 164.2,
+                            "y": 234.933
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "rocket_up_right.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 196,
+                        "y": 248
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 163.8,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 223,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 226.067,
+                            "y": 233.867
+                          },
+                          {
+                            "x": 164.2,
+                            "y": 234.933
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "right",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "rocket_right_behind.PNG",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 196,
+                        "y": 248
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 163.8,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 223,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 226.067,
+                            "y": 233.867
+                          },
+                          {
+                            "x": 164.2,
+                            "y": 234.933
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "rocket_right_left.PNG",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 196,
+                        "y": 248
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 163.8,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 223,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 226.067,
+                            "y": 233.867
+                          },
+                          {
+                            "x": 164.2,
+                            "y": 234.933
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "rocket_right_middle.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 196,
+                        "y": 248
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 163.8,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 223,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 226.067,
+                            "y": 233.867
+                          },
+                          {
+                            "x": 164.2,
+                            "y": 234.933
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "rocket_right_right.PNG",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 196,
+                        "y": 248
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 163.8,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 223,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 226.067,
+                            "y": 233.867
+                          },
+                          {
+                            "x": 164.2,
+                            "y": 234.933
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "down",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "rocket_down_behind.PNG",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 196,
+                        "y": 248
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 163.8,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 223,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 226.067,
+                            "y": 233.867
+                          },
+                          {
+                            "x": 164.2,
+                            "y": 234.933
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "rocket_down_left.PNG",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 196,
+                        "y": 248
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 163.8,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 223,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 226.067,
+                            "y": 233.867
+                          },
+                          {
+                            "x": 164.2,
+                            "y": 234.933
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "rocket_down_middle.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 196,
+                        "y": 248
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 163.8,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 223,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 226.067,
+                            "y": 233.867
+                          },
+                          {
+                            "x": 164.2,
+                            "y": 234.933
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "rocket_down_right.PNG",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 196,
+                        "y": 248
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 163.8,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 223,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 226.067,
+                            "y": 233.867
+                          },
+                          {
+                            "x": 164.2,
+                            "y": 234.933
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "left",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "rocket_left_behind.PNG",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 196,
+                        "y": 248
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 163.8,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 223,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 226.067,
+                            "y": 233.867
+                          },
+                          {
+                            "x": 164.2,
+                            "y": 234.933
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "rocket_left_left.PNG",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 196,
+                        "y": 248
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 163.8,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 223,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 226.067,
+                            "y": 233.867
+                          },
+                          {
+                            "x": 164.2,
+                            "y": 234.933
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "rocket_left_middle.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 196,
+                        "y": 248
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 163.8,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 223,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 226.067,
+                            "y": 233.867
+                          },
+                          {
+                            "x": 164.2,
+                            "y": 234.933
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "rocket_left_right.PNG",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 196,
+                        "y": 248
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 163.8,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 223,
+                            "y": 131.6
+                          },
+                          {
+                            "x": 226.067,
+                            "y": 233.867
+                          },
+                          {
+                            "x": 164.2,
+                            "y": 234.933
                           }
                         ]
                       ]
@@ -972,25 +1907,15 @@
           ]
         },
         {
-          "name": "wall_left",
+          "name": "sat_left",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "behaviors": [
-            {
-              "name": "Bounce",
-              "type": "Bounce::Bounce",
-              "OldX": 0,
-              "OldY": 0,
-              "OldForceAngle": 0,
-              "OldForceLength": 0,
-              "NormalAngle": 0
-            }
-          ],
+          "behaviors": [],
           "animations": [
             {
-              "name": "wall_left",
+              "name": "",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -999,36 +1924,36 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "wall_left-1.png",
+                      "image": "satellite_left.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 30,
-                        "y": 30
+                        "x": 180,
+                        "y": 225
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
-                        "x": 30,
-                        "y": 30
+                        "x": 0,
+                        "y": 0
                       },
                       "customCollisionMask": [
                         [
                           {
-                            "x": 15.4,
-                            "y": 7.40001
+                            "x": 48,
+                            "y": 144.267
                           },
                           {
-                            "x": 57.8,
-                            "y": 46.6
+                            "x": 76.8,
+                            "y": 111.2
                           },
                           {
-                            "x": 49.8,
-                            "y": 59.4
+                            "x": 319.4,
+                            "y": 311.4
                           },
                           {
-                            "x": 5.80002,
-                            "y": 20.2
+                            "x": 295.467,
+                            "y": 336.267
                           }
                         ]
                       ]
@@ -1040,7 +1965,7 @@
           ]
         },
         {
-          "name": "right_wall",
+          "name": "satellite_right",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -1067,36 +1992,36 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "wall_right.png",
+                      "image": "satellite_right.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 30,
-                        "y": 30
+                        "x": 179,
+                        "y": 224
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
-                        "x": 30,
-                        "y": 30
+                        "x": 0,
+                        "y": 0
                       },
                       "customCollisionMask": [
                         [
                           {
-                            "x": 49,
-                            "y": 6.60001
+                            "x": 256.2,
+                            "y": 95.4
                           },
                           {
-                            "x": 58.6,
-                            "y": 14.6
+                            "x": 285.8,
+                            "y": 120.2
                           },
                           {
-                            "x": 14.6,
-                            "y": 60.2
+                            "x": 103.4,
+                            "y": 344.2
                           },
                           {
-                            "x": 4.19999,
-                            "y": 49
+                            "x": 71.4,
+                            "y": 321.8
                           }
                         ]
                       ]
@@ -1140,7 +2065,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "exit_1",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1149,7 +2074,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "exit_1.png",
+                      "image": "exit_1-1.png",
                       "points": [
                         {
                           "name": "ball_start",
@@ -1209,7 +2134,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "exit_2",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1278,7 +2203,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "exit_3",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1347,7 +2272,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "exit_4",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1416,7 +2341,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "exit_5",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1485,7 +2410,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "exit_6",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1554,7 +2479,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "exit_7",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1623,7 +2548,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "exit_8",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1692,7 +2617,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "exit_9",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1761,7 +2686,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "exit_10",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1830,7 +2755,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "exit_11",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1839,7 +2764,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "exit_11.jpg",
+                      "image": "exit_11-1.png",
                       "points": [
                         {
                           "name": "ball_start",
@@ -1899,7 +2824,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "exit_12",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1908,7 +2833,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "exit_12.png",
+                      "image": "exit_12-1.png",
                       "points": [
                         {
                           "name": "ball_start",
@@ -1949,9 +2874,9 @@
           "font": "",
           "characterSize": 80,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           }
         },
         {
@@ -2056,9 +2981,9 @@
           "font": "",
           "characterSize": 59,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           }
         },
         {
@@ -2075,9 +3000,9 @@
           "font": "",
           "characterSize": 57,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           }
         },
         {
@@ -2094,10 +3019,49 @@
           "font": "",
           "characterSize": 54,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           }
+        },
+        {
+          "name": "space_background",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "space_background.jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -2205,7 +3169,7 @@
               "parameters": [
                 "ball_start_position",
                 "=",
-                "RandomInRange(1, 12)"
+                "11"
               ],
               "subInstructions": []
             },
@@ -2252,6 +3216,30 @@
               },
               "parameters": [
                 "clicked_confirm_or_x"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "ball_direction",
+                "=",
+                "\"not sure yet\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "force_to_happen",
+                "=",
+                "\"true\""
               ],
               "subInstructions": []
             }
@@ -2365,7 +3353,7 @@
                 "value": "Montre"
               },
               "parameters": [
-                "wall_left",
+                "sat_left",
                 ""
               ],
               "subInstructions": []
@@ -2376,7 +3364,7 @@
                 "value": "Montre"
               },
               "parameters": [
-                "right_wall",
+                "satellite_right",
                 ""
               ],
               "subInstructions": []
@@ -2409,7 +3397,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "wall_left"
+                "sat_left"
               ],
               "subInstructions": []
             },
@@ -2419,7 +3407,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "right_wall"
+                "satellite_right"
               ],
               "subInstructions": []
             },
@@ -2461,23 +3449,48 @@
             {
               "type": {
                 "inverted": false,
-                "value": "CollisionNP"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                "ball",
-                "wall_left",
-                "wall_left",
-                "",
-                ""
-              ],
-              "subInstructions": []
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"right\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"left\""
+                  ],
+                  "subInstructions": []
+                }
+              ]
             },
             {
               "type": {
                 "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
+                "value": "CollisionNP"
               },
-              "parameters": [],
+              "parameters": [
+                "rocket",
+                "sat_left",
+                "wall_left",
+                "",
+                ""
+              ],
               "subInstructions": []
             }
           ],
@@ -2513,7 +3526,7 @@
                 "value": "Arreter"
               },
               "parameters": [
-                "ball"
+                "rocket"
               ],
               "subInstructions": []
             }
@@ -2527,64 +3540,55 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarObjetTxt"
+                    "value": "VarSceneTxt"
                   },
                   "parameters": [
-                    "ball",
-                    "current_direction",
+                    "ball_direction",
                     "=",
                     "\"right\""
                   ],
                   "subInstructions": []
                 }
               ],
-              "actions": [],
-              "events": [
+              "actions": [
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "ball",
-                        "0 - Variable(ball_speed)",
-                        "Variable(ball_speed)",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "0",
+                    "Variable(ball_speed)",
+                    "1"
                   ],
-                  "events": []
+                  "subInstructions": []
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "ball",
-                        "current_direction",
-                        "=",
-                        "\"down\""
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"down\""
                   ],
-                  "events": []
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "\"down\""
+                  ],
+                  "subInstructions": []
                 }
-              ]
+              ],
+              "events": []
             },
             {
               "disabled": false,
@@ -2594,132 +3598,149 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarObjetTxt"
+                    "value": "VarSceneTxt"
                   },
                   "parameters": [
-                    "ball",
-                    "current_direction",
+                    "ball_direction",
                     "=",
                     "\"left\""
                   ],
                   "subInstructions": []
                 }
               ],
-              "actions": [],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "ball",
-                        "Variable(ball_speed)",
-                        "0 - Variable(ball_speed)",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "ball",
-                        "current_direction",
-                        "=",
-                        "\"up\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ]
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+              "actions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarObjetTxt"
+                    "value": "AddForceXY"
                   },
                   "parameters": [
-                    "ball",
-                    "current_direction",
+                    "rocket",
+                    "0",
+                    "0 - Variable(ball_speed)",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
                     "=",
+                    "\"up\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "rocket",
                     "\"up\""
                   ],
                   "subInstructions": []
                 }
               ],
-              "actions": [],
-              "events": [
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "ball",
-                        "0 - Variable(ball_speed)",
-                        "0",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"down\""
                   ],
-                  "events": []
+                  "subInstructions": []
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "ball",
-                        "current_direction",
-                        "=",
-                        "\"left\""
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"up\""
                   ],
-                  "events": []
+                  "subInstructions": []
                 }
               ]
             },
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "rocket",
+                "sat_left",
+                "wall_left",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "ball_has_hit_a_wall",
+                "=",
+                "\"true\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Physics2::EnableMask"
+              },
+              "parameters": [
+                "exits",
+                "Physics2",
+                "1",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Arreter"
+              },
+              "parameters": [
+                "rocket"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
             {
               "disabled": false,
               "folded": false,
@@ -2728,64 +3749,113 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarObjetTxt"
+                    "value": "VarSceneTxt"
                   },
                   "parameters": [
-                    "ball",
-                    "current_direction",
+                    "ball_direction",
                     "=",
                     "\"down\""
                   ],
                   "subInstructions": []
                 }
               ],
-              "actions": [],
-              "events": [
+              "actions": [
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "ball",
-                        "Variable(ball_speed)",
-                        "0",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "Variable(ball_speed)",
+                    "0",
+                    "1"
                   ],
-                  "events": []
+                  "subInstructions": []
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "ball",
-                        "current_direction",
-                        "=",
-                        "\"right\""
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"right\""
                   ],
-                  "events": []
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "\"right\""
+                  ],
+                  "subInstructions": []
                 }
-              ]
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"up\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "0 - Variable(ball_speed)",
+                    "0",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"left\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "\"left\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ]
         },
@@ -2797,23 +3867,48 @@
             {
               "type": {
                 "inverted": false,
-                "value": "CollisionNP"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                "ball",
-                "right_wall",
-                "right_wall",
-                "",
-                ""
-              ],
-              "subInstructions": []
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"left\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"right\""
+                  ],
+                  "subInstructions": []
+                }
+              ]
             },
             {
               "type": {
                 "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
+                "value": "CollisionNP"
               },
-              "parameters": [],
+              "parameters": [
+                "rocket",
+                "satellite_right",
+                "right_wall",
+                "",
+                ""
+              ],
               "subInstructions": []
             }
           ],
@@ -2849,7 +3944,7 @@
                 "value": "Arreter"
               },
               "parameters": [
-                "ball"
+                "rocket"
               ],
               "subInstructions": []
             }
@@ -2863,131 +3958,55 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarObjetTxt"
+                    "value": "VarSceneTxt"
                   },
                   "parameters": [
-                    "ball",
-                    "current_direction",
-                    "=",
-                    "\"right\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "ball",
-                        "0 - Variable(ball_speed)",
-                        "0 - Variable(ball_speed)",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "ball",
-                        "current_direction",
-                        "=",
-                        "\"up\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ]
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarObjetTxt"
-                  },
-                  "parameters": [
-                    "ball",
-                    "current_direction",
+                    "ball_direction",
                     "=",
                     "\"left\""
                   ],
                   "subInstructions": []
                 }
               ],
-              "actions": [],
-              "events": [
+              "actions": [
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "ball",
-                        "Variable(ball_speed)",
-                        "Variable(ball_speed)",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "0",
+                    "Variable(ball_speed)",
+                    "1"
                   ],
-                  "events": []
+                  "subInstructions": []
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "ball",
-                        "current_direction",
-                        "=",
-                        "\"down\""
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"down\""
                   ],
-                  "events": []
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "\"down\""
+                  ],
+                  "subInstructions": []
                 }
-              ]
+              ],
+              "events": []
             },
             {
               "disabled": false,
@@ -2997,64 +4016,206 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarObjetTxt"
+                    "value": "VarSceneTxt"
                   },
                   "parameters": [
-                    "ball",
-                    "current_direction",
+                    "ball_direction",
+                    "=",
+                    "\"right\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "0",
+                    "0 - Variable(ball_speed)",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"up\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "\"up\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"up\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"down\""
+                  ],
+                  "subInstructions": []
+                }
+              ]
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "rocket",
+                "satellite_right",
+                "right_wall",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "ball_has_hit_a_wall",
+                "=",
+                "\"true\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Physics2::EnableMask"
+              },
+              "parameters": [
+                "exits",
+                "Physics2",
+                "1",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Arreter"
+              },
+              "parameters": [
+                "rocket"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
                     "=",
                     "\"up\""
                   ],
                   "subInstructions": []
                 }
               ],
-              "actions": [],
-              "events": [
+              "actions": [
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "ball",
-                        "Variable(ball_speed)",
-                        "0",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "Variable(ball_speed)",
+                    "0",
+                    "1"
                   ],
-                  "events": []
+                  "subInstructions": []
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "ball",
-                        "current_direction",
-                        "=",
-                        "\"right\""
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"right\""
                   ],
-                  "events": []
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "\"right\""
+                  ],
+                  "subInstructions": []
                 }
-              ]
+              ],
+              "events": []
             },
             {
               "disabled": false,
@@ -3064,66 +4225,78 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarObjetTxt"
+                    "value": "VarSceneTxt"
                   },
                   "parameters": [
-                    "ball",
-                    "current_direction",
+                    "ball_direction",
                     "=",
                     "\"down\""
                   ],
                   "subInstructions": []
                 }
               ],
-              "actions": [],
-              "events": [
+              "actions": [
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "ball",
-                        "0 - Variable(ball_speed)",
-                        "0",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "0 - Variable(ball_speed)",
+                    "0",
+                    "1"
                   ],
-                  "events": []
+                  "subInstructions": []
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "ball",
-                        "current_direction",
-                        "=",
-                        "\"left\""
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"left\""
                   ],
-                  "events": []
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "\"left\""
+                  ],
+                  "subInstructions": []
                 }
-              ]
+              ],
+              "events": []
             }
           ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Debug",
+                "=",
+                "\"current ball direction: \" + VariableString(ball_direction)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         },
         {
           "disabled": false,
@@ -5230,7 +6403,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 "exit_1",
                 "exit_1",
                 "",
@@ -5258,7 +6431,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 ""
               ],
               "subInstructions": []
@@ -5388,7 +6561,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 "exit_2",
                 "exit_2",
                 "",
@@ -5416,7 +6589,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 ""
               ],
               "subInstructions": []
@@ -5546,7 +6719,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 "exit_3",
                 "exit_3",
                 "",
@@ -5574,7 +6747,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 ""
               ],
               "subInstructions": []
@@ -5704,7 +6877,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 "exit_4",
                 "exit_4",
                 "",
@@ -5732,7 +6905,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 ""
               ],
               "subInstructions": []
@@ -5862,7 +7035,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 "exit_5",
                 "exit_5",
                 "",
@@ -5890,7 +7063,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 ""
               ],
               "subInstructions": []
@@ -6020,7 +7193,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 "exit_6",
                 "exit_6",
                 "",
@@ -6048,7 +7221,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 ""
               ],
               "subInstructions": []
@@ -6178,7 +7351,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 "exit_7",
                 "exit_7",
                 "",
@@ -6206,7 +7379,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 ""
               ],
               "subInstructions": []
@@ -6336,7 +7509,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 "exit_8",
                 "exit_8",
                 "",
@@ -6364,7 +7537,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 ""
               ],
               "subInstructions": []
@@ -6494,7 +7667,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 "exit_9",
                 "exit_9exit_9",
                 "",
@@ -6522,7 +7695,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 ""
               ],
               "subInstructions": []
@@ -6652,7 +7825,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 "exit_10",
                 "exit_10",
                 "",
@@ -6680,7 +7853,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 ""
               ],
               "subInstructions": []
@@ -6810,7 +7983,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 "exit_11",
                 "exit_11",
                 "",
@@ -6838,7 +8011,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 ""
               ],
               "subInstructions": []
@@ -6968,7 +8141,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 "exit_12",
                 "exit_12",
                 "",
@@ -6996,7 +8169,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "ball",
+                "rocket",
                 ""
               ],
               "subInstructions": []
@@ -7263,23 +8436,10 @@
                     "value": "AddForceXY"
                   },
                   "parameters": [
-                    "ball",
+                    "rocket",
                     "0",
                     "Variable(ball_speed)",
                     "1"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarObjetTxt"
-                  },
-                  "parameters": [
-                    "ball",
-                    "current_direction",
-                    "=",
-                    "\"down\""
                   ],
                   "subInstructions": []
                 }
@@ -7344,23 +8504,10 @@
                     "value": "AddForceXY"
                   },
                   "parameters": [
-                    "ball",
+                    "rocket",
                     "0 - Variable(ball_speed)",
                     "0",
                     "1"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarObjetTxt"
-                  },
-                  "parameters": [
-                    "ball",
-                    "current_direction",
-                    "=",
-                    "\"left\""
                   ],
                   "subInstructions": []
                 }
@@ -7425,23 +8572,10 @@
                     "value": "AddForceXY"
                   },
                   "parameters": [
-                    "ball",
+                    "rocket",
                     "0",
                     "0 - Variable(ball_speed)",
                     "1"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarObjetTxt"
-                  },
-                  "parameters": [
-                    "ball",
-                    "current_direction",
-                    "=",
-                    "\"up\""
                   ],
                   "subInstructions": []
                 }
@@ -7506,23 +8640,10 @@
                     "value": "AddForceXY"
                   },
                   "parameters": [
-                    "ball",
+                    "rocket",
                     "Variable(ball_speed)",
                     "0",
                     "1"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarObjetTxt"
-                  },
-                  "parameters": [
-                    "ball",
-                    "current_direction",
-                    "=",
-                    "\"right\""
                   ],
                   "subInstructions": []
                 }
@@ -7671,16 +8792,6 @@
                 ""
               ],
               "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Cache"
-              },
-              "parameters": [
-                "clicked_confirm_or_x"
-              ],
-              "subInstructions": []
             }
           ],
           "events": []
@@ -7775,7 +8886,7 @@
                   },
                   "parameters": [
                     "",
-                    "wall_left",
+                    "sat_left",
                     "Variable(row_one_50)",
                     "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))",
                     ""
@@ -7783,7 +8894,29 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeScale"
+                      },
+                      "parameters": [
+                        "sat_left",
+                        "=",
+                        "Variable(satellite_scale)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             },
             {
               "disabled": false,
@@ -7811,7 +8944,7 @@
                   },
                   "parameters": [
                     "",
-                    "right_wall",
+                    "satellite_right",
                     "Variable(row_one_50)",
                     "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))",
                     ""
@@ -7819,7 +8952,29 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeScale"
+                      },
+                      "parameters": [
+                        "satellite_right",
+                        "=",
+                        "Variable(satellite_scale)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             }
           ]
         },
@@ -7913,7 +9068,7 @@
                   },
                   "parameters": [
                     "",
-                    "wall_left",
+                    "sat_left",
                     "Variable(row_two_150)",
                     "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))",
                     ""
@@ -7921,7 +9076,29 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeScale"
+                      },
+                      "parameters": [
+                        "sat_left",
+                        "=",
+                        "Variable(satellite_scale)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             },
             {
               "disabled": false,
@@ -7949,7 +9126,7 @@
                   },
                   "parameters": [
                     "",
-                    "right_wall",
+                    "satellite_right",
                     "Variable(row_two_150)",
                     "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))",
                     ""
@@ -7957,7 +9134,29 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeScale"
+                      },
+                      "parameters": [
+                        "satellite_right",
+                        "=",
+                        "Variable(satellite_scale)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             }
           ]
         },
@@ -8051,7 +9250,7 @@
                   },
                   "parameters": [
                     "",
-                    "wall_left",
+                    "sat_left",
                     "Variable(row_three_250)",
                     "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))",
                     ""
@@ -8059,7 +9258,29 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeScale"
+                      },
+                      "parameters": [
+                        "sat_left",
+                        "=",
+                        "Variable(satellite_scale)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             },
             {
               "disabled": false,
@@ -8087,7 +9308,7 @@
                   },
                   "parameters": [
                     "",
-                    "right_wall",
+                    "satellite_right",
                     "Variable(row_three_250)",
                     "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))",
                     ""
@@ -8095,7 +9316,29 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeScale"
+                      },
+                      "parameters": [
+                        "satellite_right",
+                        "=",
+                        "Variable(satellite_scale)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             }
           ]
         },
@@ -8170,12 +9413,12 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
+                    "inverted": true,
                     "value": "VarScene"
                   },
                   "parameters": [
                     "random_number",
-                    ">",
+                    "<=",
                     "50"
                   ],
                   "subInstructions": []
@@ -8189,7 +9432,7 @@
                   },
                   "parameters": [
                     "",
-                    "wall_left",
+                    "sat_left",
                     "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))",
                     "Variable(col_one_50)",
                     ""
@@ -8197,7 +9440,29 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeScale"
+                      },
+                      "parameters": [
+                        "sat_left",
+                        "=",
+                        "Variable(satellite_scale)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             },
             {
               "disabled": false,
@@ -8225,7 +9490,7 @@
                   },
                   "parameters": [
                     "",
-                    "right_wall",
+                    "satellite_right",
                     "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))",
                     "Variable(col_one_50)",
                     ""
@@ -8233,7 +9498,29 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeScale"
+                      },
+                      "parameters": [
+                        "satellite_right",
+                        "=",
+                        "Variable(satellite_scale)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             }
           ]
         },
@@ -8308,12 +9595,12 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
+                    "inverted": true,
                     "value": "VarScene"
                   },
                   "parameters": [
                     "random_number",
-                    ">",
+                    "<=",
                     "50"
                   ],
                   "subInstructions": []
@@ -8327,7 +9614,7 @@
                   },
                   "parameters": [
                     "",
-                    "wall_left",
+                    "sat_left",
                     "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))",
                     "Variable(col_two_150)",
                     ""
@@ -8335,7 +9622,29 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeScale"
+                      },
+                      "parameters": [
+                        "sat_left",
+                        "=",
+                        "Variable(satellite_scale)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             },
             {
               "disabled": false,
@@ -8363,7 +9672,7 @@
                   },
                   "parameters": [
                     "",
-                    "right_wall",
+                    "satellite_right",
                     "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))",
                     "Variable(col_two_150)",
                     ""
@@ -8371,7 +9680,29 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeScale"
+                      },
+                      "parameters": [
+                        "satellite_right",
+                        "=",
+                        "Variable(satellite_scale)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             }
           ]
         },
@@ -8446,12 +9777,12 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
+                    "inverted": true,
                     "value": "VarScene"
                   },
                   "parameters": [
                     "random_number",
-                    ">",
+                    "<=",
                     "50"
                   ],
                   "subInstructions": []
@@ -8465,7 +9796,7 @@
                   },
                   "parameters": [
                     "",
-                    "wall_left",
+                    "sat_left",
                     "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))",
                     "Variable(col_three_250)",
                     ""
@@ -8473,7 +9804,29 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeScale"
+                      },
+                      "parameters": [
+                        "sat_left",
+                        "=",
+                        "Variable(satellite_scale)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             },
             {
               "disabled": false,
@@ -8501,7 +9854,7 @@
                   },
                   "parameters": [
                     "",
-                    "right_wall",
+                    "satellite_right",
                     "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))",
                     "Variable(col_three_250)",
                     ""
@@ -8509,7 +9862,29 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeScale"
+                      },
+                      "parameters": [
+                        "satellite_right",
+                        "=",
+                        "Variable(satellite_scale)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             }
           ]
         },
@@ -8574,7 +9949,7 @@
               },
               "parameters": [
                 "",
-                "ball",
+                "rocket",
                 "exit_1.PointX(\"ball_start\")",
                 "exit_1.PointY(\"ball_start\")",
                 ""
@@ -8595,9 +9970,44 @@
                     "value": "ChangeScale"
                   },
                   "parameters": [
-                    "ball",
+                    "rocket",
                     "=",
-                    "ball.Variable(scale_factor)"
+                    "rocket.Variable(scale_factor)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"down\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "show_ball",
+                    "=",
+                    "\"false\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "\"down\""
                   ],
                   "subInstructions": []
                 }
@@ -8652,7 +10062,7 @@
               },
               "parameters": [
                 "",
-                "ball",
+                "rocket",
                 "exit_2.PointX(\"ball_start\")",
                 "exit_2.PointY(\"ball_start\")",
                 ""
@@ -8673,9 +10083,44 @@
                     "value": "ChangeScale"
                   },
                   "parameters": [
-                    "ball",
+                    "rocket",
                     "=",
-                    "ball.Variable(scale_factor)"
+                    "rocket.Variable(scale_factor)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"down\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "show_ball",
+                    "=",
+                    "\"false\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "\"down\""
                   ],
                   "subInstructions": []
                 }
@@ -8730,7 +10175,7 @@
               },
               "parameters": [
                 "",
-                "ball",
+                "rocket",
                 "exit_3.PointX(\"ball_start\")",
                 "exit_3.PointY(\"ball_start\")",
                 ""
@@ -8751,9 +10196,44 @@
                     "value": "ChangeScale"
                   },
                   "parameters": [
-                    "ball",
+                    "rocket",
                     "=",
-                    "ball.Variable(scale_factor)"
+                    "rocket.Variable(scale_factor)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"down\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "show_ball",
+                    "=",
+                    "\"false\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "\"down\""
                   ],
                   "subInstructions": []
                 }
@@ -8808,7 +10288,7 @@
               },
               "parameters": [
                 "",
-                "ball",
+                "rocket",
                 "exit_4.PointX(\"ball_start\")",
                 "exit_4.PointY(\"ball_start\")",
                 ""
@@ -8829,9 +10309,44 @@
                     "value": "ChangeScale"
                   },
                   "parameters": [
-                    "ball",
+                    "rocket",
                     "=",
-                    "ball.Variable(scale_factor)"
+                    "rocket.Variable(scale_factor)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"left\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "show_ball",
+                    "=",
+                    "\"false\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "\"left\""
                   ],
                   "subInstructions": []
                 }
@@ -8886,7 +10401,7 @@
               },
               "parameters": [
                 "",
-                "ball",
+                "rocket",
                 "exit_5.PointX(\"ball_start\")",
                 "exit_5.PointY(\"ball_start\")",
                 ""
@@ -8907,9 +10422,44 @@
                     "value": "ChangeScale"
                   },
                   "parameters": [
-                    "ball",
+                    "rocket",
                     "=",
-                    "ball.Variable(scale_factor)"
+                    "rocket.Variable(scale_factor)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"left\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "show_ball",
+                    "=",
+                    "\"false\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "\"left\""
                   ],
                   "subInstructions": []
                 }
@@ -8964,7 +10514,7 @@
               },
               "parameters": [
                 "",
-                "ball",
+                "rocket",
                 "exit_6.PointX(\"ball_start\")",
                 "exit_6.PointY(\"ball_start\")",
                 ""
@@ -8985,9 +10535,44 @@
                     "value": "ChangeScale"
                   },
                   "parameters": [
-                    "ball",
+                    "rocket",
                     "=",
-                    "ball.Variable(scale_factor)"
+                    "rocket.Variable(scale_factor)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"left\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "show_ball",
+                    "=",
+                    "\"false\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "\"left\""
                   ],
                   "subInstructions": []
                 }
@@ -9042,7 +10627,7 @@
               },
               "parameters": [
                 "",
-                "ball",
+                "rocket",
                 "exit_7.PointX(\"ball_start\")",
                 "exit_7.PointY(\"ball_start\")",
                 ""
@@ -9063,9 +10648,44 @@
                     "value": "ChangeScale"
                   },
                   "parameters": [
-                    "ball",
+                    "rocket",
                     "=",
-                    "ball.Variable(scale_factor)"
+                    "rocket.Variable(scale_factor)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"up\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "show_ball",
+                    "=",
+                    "\"false\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "\"up\""
                   ],
                   "subInstructions": []
                 }
@@ -9120,7 +10740,7 @@
               },
               "parameters": [
                 "",
-                "ball",
+                "rocket",
                 "exit_8.PointX(\"ball_start\")",
                 "exit_8.PointY(\"ball_start\")",
                 ""
@@ -9141,9 +10761,44 @@
                     "value": "ChangeScale"
                   },
                   "parameters": [
-                    "ball",
+                    "rocket",
                     "=",
-                    "ball.Variable(scale_factor)"
+                    "rocket.Variable(scale_factor)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"up\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "show_ball",
+                    "=",
+                    "\"false\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "\"up\""
                   ],
                   "subInstructions": []
                 }
@@ -9198,7 +10853,7 @@
               },
               "parameters": [
                 "",
-                "ball",
+                "rocket",
                 "exit_9.PointX(\"ball_start\")",
                 "exit_9.PointY(\"ball_start\")",
                 ""
@@ -9219,9 +10874,44 @@
                     "value": "ChangeScale"
                   },
                   "parameters": [
-                    "ball",
+                    "rocket",
                     "=",
-                    "ball.Variable(scale_factor)"
+                    "rocket.Variable(scale_factor)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"up\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "show_ball",
+                    "=",
+                    "\"false\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "\"up\""
                   ],
                   "subInstructions": []
                 }
@@ -9276,7 +10966,7 @@
               },
               "parameters": [
                 "",
-                "ball",
+                "rocket",
                 "exit_10.PointX(\"ball_start\")",
                 "exit_10.PointY(\"ball_start\")",
                 ""
@@ -9297,9 +10987,44 @@
                     "value": "ChangeScale"
                   },
                   "parameters": [
-                    "ball",
+                    "rocket",
                     "=",
-                    "ball.Variable(scale_factor)"
+                    "rocket.Variable(scale_factor)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"right\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "show_ball",
+                    "=",
+                    "\"false\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "\"right\""
                   ],
                   "subInstructions": []
                 }
@@ -9354,7 +11079,7 @@
               },
               "parameters": [
                 "",
-                "ball",
+                "rocket",
                 "exit_11.PointX(\"ball_start\")",
                 "exit_11.PointY(\"ball_start\")",
                 ""
@@ -9375,9 +11100,44 @@
                     "value": "ChangeScale"
                   },
                   "parameters": [
-                    "ball",
+                    "rocket",
                     "=",
-                    "ball.Variable(scale_factor)"
+                    "rocket.Variable(scale_factor)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"right\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "show_ball",
+                    "=",
+                    "\"false\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "\"right\""
                   ],
                   "subInstructions": []
                 }
@@ -9432,7 +11192,7 @@
               },
               "parameters": [
                 "",
-                "ball",
+                "rocket",
                 "exit_12.PointX(\"ball_start\")",
                 "exit_12.PointY(\"ball_start\")",
                 ""
@@ -9453,9 +11213,44 @@
                     "value": "ChangeScale"
                   },
                   "parameters": [
-                    "ball",
+                    "rocket",
                     "=",
-                    "ball.Variable(scale_factor)"
+                    "rocket.Variable(scale_factor)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "ball_direction",
+                    "=",
+                    "\"right\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "show_ball",
+                    "=",
+                    "\"false\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "rocket",
+                    "\"right\""
                   ],
                   "subInstructions": []
                 }
@@ -9491,33 +11286,9 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "Debug",
-                "=",
-                "\"current ball direction: \" + ball.VariableString(current_direction)"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
                 "Score",
                 "=",
                 "\"Score: \" + GlobalVariableString(Score)"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "debug_2",
-                "=",
-                "\"has ball hit a wall: \" + VariableString(ball_has_hit_a_wall)"
               ],
               "subInstructions": []
             }
