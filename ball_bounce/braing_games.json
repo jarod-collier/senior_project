@@ -915,7 +915,7 @@
           "value": "150"
         },
         {
-          "name": "random_number",
+          "name": "first_sat_orientation",
           "value": "0"
         },
         {
@@ -3182,7 +3182,7 @@
                 "value": "ModVarScene"
               },
               "parameters": [
-                "random_number",
+                "first_sat_orientation",
                 "=",
                 "RandomInRange(0, 100)"
               ],
@@ -8976,7 +8976,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     ">",
                     "50"
                   ],
@@ -9034,7 +9034,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     "<=",
                     "50"
                   ],
@@ -9171,7 +9171,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     ">",
                     "50"
                   ],
@@ -9229,7 +9229,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     "<=",
                     "50"
                   ],
@@ -9366,7 +9366,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     ">",
                     "50"
                   ],
@@ -9424,7 +9424,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     "<=",
                     "50"
                   ],
@@ -9561,7 +9561,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     "<=",
                     "50"
                   ],
@@ -9619,7 +9619,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     "<=",
                     "50"
                   ],
@@ -9756,7 +9756,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     "<=",
                     "50"
                   ],
@@ -9814,7 +9814,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     "<=",
                     "50"
                   ],
@@ -9951,7 +9951,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     "<=",
                     "50"
                   ],
@@ -10009,7 +10009,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     "<=",
                     "50"
                   ],

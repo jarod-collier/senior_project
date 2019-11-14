@@ -915,7 +915,7 @@
           "value": "150"
         },
         {
-          "name": "random_number",
+          "name": "first_sat_orientation",
           "value": "0"
         },
         {
@@ -1196,36 +1196,6 @@
           "x": -1451,
           "y": -786,
           "zOrder": -832,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Debug",
-          "width": 0,
-          "x": -588,
-          "y": 426,
-          "zOrder": 45,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "debug_2",
-          "width": 0,
-          "x": -567,
-          "y": 59,
-          "zOrder": 46,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3212,7 +3182,7 @@
                 "value": "ModVarScene"
               },
               "parameters": [
-                "random_number",
+                "first_sat_orientation",
                 "=",
                 "RandomInRange(0, 100)"
               ],
@@ -3261,6 +3231,18 @@
                 "ball_direction",
                 "=",
                 "\"not sure yet\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Level",
+                "=",
+                "\"Level: \" + VariableString(level)"
               ],
               "subInstructions": []
             }
@@ -3441,27 +3423,6 @@
                 "show_ball",
                 "=",
                 "\"true\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "Level",
-                "=",
-                "\"Level: \" + VariableString(level)"
               ],
               "subInstructions": []
             }
@@ -9015,7 +8976,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     ">",
                     "50"
                   ],
@@ -9073,7 +9034,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     "<=",
                     "50"
                   ],
@@ -9210,7 +9171,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     ">",
                     "50"
                   ],
@@ -9268,7 +9229,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     "<=",
                     "50"
                   ],
@@ -9405,7 +9366,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     ">",
                     "50"
                   ],
@@ -9463,7 +9424,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     "<=",
                     "50"
                   ],
@@ -9600,7 +9561,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     "<=",
                     "50"
                   ],
@@ -9658,7 +9619,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     "<=",
                     "50"
                   ],
@@ -9795,7 +9756,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     "<=",
                     "50"
                   ],
@@ -9853,7 +9814,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     "<=",
                     "50"
                   ],
@@ -9990,7 +9951,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     "<=",
                     "50"
                   ],
@@ -10048,7 +10009,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "random_number",
+                    "first_sat_orientation",
                     "<=",
                     "50"
                   ],
