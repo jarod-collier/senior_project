@@ -799,8 +799,8 @@
     {
       "b": 255,
       "disableInputWhenNotFocused": true,
-      "mangledName": "ball_95rebound",
-      "name": "ball_rebound",
+      "mangledName": "_51x3_321_32sat",
+      "name": "3x3 1 sat",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
@@ -953,6 +953,10 @@
         {
           "name": "spaceship_scale",
           "value": ".25"
+        },
+        {
+          "name": "first_sat_random_position",
+          "value": "0"
         }
       ],
       "instances": [
@@ -1202,26 +1206,11 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "Debug",
+          "name": "Level",
           "width": 0,
-          "x": -588,
-          "y": 426,
-          "zOrder": 45,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "debug_2",
-          "width": 0,
-          "x": -567,
-          "y": 59,
-          "zOrder": 46,
+          "x": 340,
+          "y": -197,
+          "zOrder": 47,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3057,6 +3046,25 @@
               ]
             }
           ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Level",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Level: ",
+          "font": "",
+          "characterSize": 80,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
         }
       ],
       "events": [
@@ -3229,12 +3237,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarSceneTxt"
+                "value": "TextObject::String"
               },
               "parameters": [
-                "force_to_happen",
+                "Level",
                 "=",
-                "\"true\""
+                "\"Level: \" + VariableString(level)"
               ],
               "subInstructions": []
             }
@@ -3535,17 +3543,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "satellite_right",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarSceneTxt"
                   },
                   "parameters": [
@@ -3565,6 +3562,18 @@
                     "Physics2",
                     "1",
                     "yes"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "satellite_right",
+                    ""
                   ],
                   "subInstructions": []
                 },
@@ -3630,17 +3639,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "sat_left",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarSceneTxt"
                   },
                   "parameters": [
@@ -3660,6 +3658,18 @@
                     "Physics2",
                     "1",
                     "yes"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "sat_left",
+                    ""
                   ],
                   "subInstructions": []
                 },
@@ -3759,17 +3769,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "satellite_right",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarSceneTxt"
                   },
                   "parameters": [
@@ -3789,6 +3788,18 @@
                     "Physics2",
                     "1",
                     "yes"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "satellite_right",
+                    ""
                   ],
                   "subInstructions": []
                 },
@@ -3854,17 +3865,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "sat_left",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarSceneTxt"
                   },
                   "parameters": [
@@ -3884,6 +3884,18 @@
                     "Physics2",
                     "1",
                     "yes"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "sat_left",
+                    ""
                   ],
                   "subInstructions": []
                 },
@@ -3983,17 +3995,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "satellite_right",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarSceneTxt"
                   },
                   "parameters": [
@@ -4013,6 +4014,18 @@
                     "Physics2",
                     "1",
                     "yes"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "satellite_right",
+                    ""
                   ],
                   "subInstructions": []
                 },
@@ -4078,17 +4091,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "sat_left",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarSceneTxt"
                   },
                   "parameters": [
@@ -4108,6 +4110,18 @@
                     "Physics2",
                     "1",
                     "yes"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "sat_left",
+                    ""
                   ],
                   "subInstructions": []
                 },
@@ -4207,17 +4221,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "satellite_right",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarSceneTxt"
                   },
                   "parameters": [
@@ -4237,6 +4240,18 @@
                     "Physics2",
                     "1",
                     "yes"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "satellite_right",
+                    ""
                   ],
                   "subInstructions": []
                 },
@@ -4302,17 +4317,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "sat_left",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarSceneTxt"
                   },
                   "parameters": [
@@ -4332,6 +4336,18 @@
                     "Physics2",
                     "1",
                     "yes"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "sat_left",
+                    ""
                   ],
                   "subInstructions": []
                 },
@@ -6528,7 +6544,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"ball_rebound\"",
+                    "\"3x3 2 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -6572,7 +6588,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"ball_rebound\"",
+                    "\"3x3 1 sat\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -6686,7 +6702,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"ball_rebound\"",
+                    "\"3x3 2 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -6726,18 +6742,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"ball_rebound\"",
-                    "yes"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Montre"
                   },
                   "parameters": [
@@ -6755,6 +6759,18 @@
                     "Score",
                     "-",
                     "100"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"3x3 1 sat\"",
+                    "yes"
                   ],
                   "subInstructions": []
                 }
@@ -6844,7 +6860,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"ball_rebound\"",
+                    "\"3x3 2 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -6884,18 +6900,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"ball_rebound\"",
-                    "yes"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Montre"
                   },
                   "parameters": [
@@ -6913,6 +6917,18 @@
                     "Score",
                     "-",
                     "100"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"3x3 1 sat\"",
+                    "yes"
                   ],
                   "subInstructions": []
                 }
@@ -7002,7 +7018,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"ball_rebound\"",
+                    "\"3x3 2 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -7042,18 +7058,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"ball_rebound\"",
-                    "yes"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Montre"
                   },
                   "parameters": [
@@ -7071,6 +7075,18 @@
                     "Score",
                     "-",
                     "100"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"3x3 1 sat\"",
+                    "yes"
                   ],
                   "subInstructions": []
                 }
@@ -7160,7 +7176,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"ball_rebound\"",
+                    "\"3x3 2 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -7200,18 +7216,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"ball_rebound\"",
-                    "yes"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Montre"
                   },
                   "parameters": [
@@ -7229,6 +7233,18 @@
                     "Score",
                     "-",
                     "100"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"3x3 1 sat\"",
+                    "yes"
                   ],
                   "subInstructions": []
                 }
@@ -7318,7 +7334,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"ball_rebound\"",
+                    "\"3x3 2 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -7358,18 +7374,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"ball_rebound\"",
-                    "yes"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Montre"
                   },
                   "parameters": [
@@ -7387,6 +7391,18 @@
                     "Score",
                     "-",
                     "100"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"3x3 1 sat\"",
+                    "yes"
                   ],
                   "subInstructions": []
                 }
@@ -7472,24 +7488,24 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"ball_rebound\"",
-                    "yes"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
                     "Score",
                     "+",
                     "100"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"3x3 2 sats\"",
+                    "yes"
                   ],
                   "subInstructions": []
                 }
@@ -7516,18 +7532,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"ball_rebound\"",
-                    "yes"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Montre"
                   },
                   "parameters": [
@@ -7545,6 +7549,18 @@
                     "Score",
                     "-",
                     "100"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"3x3 1 sat\"",
+                    "yes"
                   ],
                   "subInstructions": []
                 }
@@ -7634,7 +7650,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"ball_rebound\"",
+                    "\"3x3 2 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -7674,18 +7690,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"ball_rebound\"",
-                    "yes"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Montre"
                   },
                   "parameters": [
@@ -7703,6 +7707,18 @@
                     "Score",
                     "-",
                     "100"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"3x3 1 sat\"",
+                    "yes"
                   ],
                   "subInstructions": []
                 }
@@ -7792,7 +7808,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"ball_rebound\"",
+                    "\"3x3 2 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -7832,18 +7848,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"ball_rebound\"",
-                    "yes"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Montre"
                   },
                   "parameters": [
@@ -7861,6 +7865,18 @@
                     "Score",
                     "-",
                     "100"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"3x3 1 sat\"",
+                    "yes"
                   ],
                   "subInstructions": []
                 }
@@ -7950,7 +7966,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"ball_rebound\"",
+                    "\"3x3 2 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -7990,18 +8006,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"ball_rebound\"",
-                    "yes"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Montre"
                   },
                   "parameters": [
@@ -8019,6 +8023,18 @@
                     "Score",
                     "-",
                     "100"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"3x3 1 sat\"",
+                    "yes"
                   ],
                   "subInstructions": []
                 }
@@ -8108,7 +8124,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"ball_rebound\"",
+                    "\"3x3 2 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -8148,18 +8164,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"ball_rebound\"",
-                    "yes"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Montre"
                   },
                   "parameters": [
@@ -8177,6 +8181,18 @@
                     "Score",
                     "-",
                     "100"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"3x3 1 sat\"",
+                    "yes"
                   ],
                   "subInstructions": []
                 }
@@ -8266,7 +8282,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"ball_rebound\"",
+                    "\"3x3 2 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -8306,18 +8322,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"ball_rebound\"",
-                    "yes"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Montre"
                   },
                   "parameters": [
@@ -8335,6 +8339,18 @@
                     "Score",
                     "-",
                     "100"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"3x3 1 sat\"",
+                    "yes"
                   ],
                   "subInstructions": []
                 }
@@ -8870,15 +8886,28 @@
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "conditions": [],
+          "actions": [
             {
               "type": {
                 "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
+                "value": "TextObject::String"
               },
-              "parameters": [],
+              "parameters": [
+                "Debug",
+                "=",
+                "\"random position: \" + VariableString(first_sat_random_position)"
+              ],
               "subInstructions": []
-            },
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
               "type": {
                 "inverted": false,
@@ -8911,9 +8940,30 @@
                   "subInstructions": []
                 }
               ]
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "first_sat_random_position",
+                "=",
+                "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))"
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": [
             {
               "disabled": false,
@@ -8943,7 +8993,7 @@
                     "",
                     "sat_left",
                     "Variable(row_one_50)",
-                    "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))",
+                    "Variable(first_sat_random_position)",
                     ""
                   ],
                   "subInstructions": []
@@ -9001,7 +9051,7 @@
                     "",
                     "satellite_right",
                     "Variable(row_one_50)",
-                    "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))",
+                    "Variable(first_sat_random_position)",
                     ""
                   ],
                   "subInstructions": []
@@ -9095,7 +9145,20 @@
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "first_sat_random_position",
+                "=",
+                "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))"
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": [
             {
               "disabled": false,
@@ -9125,7 +9188,7 @@
                     "",
                     "sat_left",
                     "Variable(row_two_150)",
-                    "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))",
+                    "Variable(first_sat_random_position)",
                     ""
                   ],
                   "subInstructions": []
@@ -9183,7 +9246,7 @@
                     "",
                     "satellite_right",
                     "Variable(row_two_150)",
-                    "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))",
+                    "Variable(first_sat_random_position)",
                     ""
                   ],
                   "subInstructions": []
@@ -9277,7 +9340,20 @@
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "first_sat_random_position",
+                "=",
+                "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))"
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": [
             {
               "disabled": false,
@@ -9307,7 +9383,7 @@
                     "",
                     "sat_left",
                     "Variable(row_three_250)",
-                    "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))",
+                    "Variable(first_sat_random_position)",
                     ""
                   ],
                   "subInstructions": []
@@ -9365,7 +9441,7 @@
                     "",
                     "satellite_right",
                     "Variable(row_three_250)",
-                    "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))",
+                    "Variable(first_sat_random_position)",
                     ""
                   ],
                   "subInstructions": []
@@ -9459,7 +9535,20 @@
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "first_sat_random_position",
+                "=",
+                "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))"
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": [
             {
               "disabled": false,
@@ -9488,7 +9577,7 @@
                   "parameters": [
                     "",
                     "sat_left",
-                    "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))",
+                    "Variable(first_sat_random_position)",
                     "Variable(col_one_50)",
                     ""
                   ],
@@ -9546,7 +9635,7 @@
                   "parameters": [
                     "",
                     "satellite_right",
-                    "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))",
+                    "Variable(first_sat_random_position)",
                     "Variable(col_one_50)",
                     ""
                   ],
@@ -9641,7 +9730,20 @@
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "first_sat_random_position",
+                "=",
+                "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))"
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": [
             {
               "disabled": false,
@@ -9670,7 +9772,7 @@
                   "parameters": [
                     "",
                     "sat_left",
-                    "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))",
+                    "Variable(first_sat_random_position)",
                     "Variable(col_two_150)",
                     ""
                   ],
@@ -9728,7 +9830,7 @@
                   "parameters": [
                     "",
                     "satellite_right",
-                    "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))",
+                    "Variable(first_sat_random_position)",
                     "Variable(col_two_150)",
                     ""
                   ],
@@ -9823,7 +9925,20 @@
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "first_sat_random_position",
+                "=",
+                "RandomWithStep(Variable(col_one_50), Variable(col_three_250), Variable(distance_between_cells))"
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": [
             {
               "disabled": false,
@@ -9852,7 +9967,7 @@
                   "parameters": [
                     "",
                     "sat_left",
-                    "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))",
+                    "Variable(first_sat_random_position)",
                     "Variable(col_three_250)",
                     ""
                   ],
@@ -9910,7 +10025,7 @@
                   "parameters": [
                     "",
                     "satellite_right",
-                    "RandomWithStep(Variable(row_one_50), Variable(row_three_250), Variable(distance_between_cells))",
+                    "Variable(first_sat_random_position)",
                     "Variable(col_three_250)",
                     ""
                   ],
