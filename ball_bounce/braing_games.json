@@ -1102,6 +1102,22 @@
         {
           "name": "sat2_y_position",
           "value": "0"
+        },
+        {
+          "name": "created_first_sat",
+          "value": "\"false\""
+        },
+        {
+          "name": "created_second_sat",
+          "value": "\"false\""
+        },
+        {
+          "name": "created_third_sat",
+          "value": "\"false\""
+        },
+        {
+          "name": "created_fourth_sat",
+          "value": "\"false\""
         }
       ],
       "instances": [
@@ -1368,8 +1384,8 @@
           "locked": false,
           "name": "debug_2",
           "width": 0,
-          "x": -569,
-          "y": 54,
+          "x": -573,
+          "y": 82,
           "zOrder": 48,
           "numberProperties": [],
           "stringProperties": [],
@@ -1398,8 +1414,8 @@
           "locked": false,
           "name": "debug_3",
           "width": 0,
-          "x": -577,
-          "y": 151,
+          "x": -621,
+          "y": 239,
           "zOrder": 52,
           "numberProperties": [],
           "stringProperties": [],
@@ -1413,8 +1429,8 @@
           "locked": false,
           "name": "debug_4",
           "width": 0,
-          "x": -571,
-          "y": 248,
+          "x": -616,
+          "y": 484,
           "zOrder": 53,
           "numberProperties": [],
           "stringProperties": [],
@@ -1428,8 +1444,8 @@
           "locked": false,
           "name": "debug_5",
           "width": 0,
-          "x": -588,
-          "y": 385,
+          "x": 350,
+          "y": 530,
           "zOrder": 54,
           "numberProperties": [],
           "stringProperties": [],
@@ -3988,6 +4004,54 @@
                 "sats_created",
                 "=",
                 "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "created_first_sat",
+                "=",
+                "\"false\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "created_second_sat",
+                "=",
+                "\"false\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "created_third_sat",
+                "=",
+                "\"false\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "created_fourth_sat",
+                "=",
+                "\"false\""
               ],
               "subInstructions": []
             }
@@ -8910,6 +8974,40 @@
             {
               "type": {
                 "inverted": false,
+                "value": "Timer"
+              },
+              "parameters": [
+                "",
+                "2",
+                "\"does_not_hit_a_sat\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "ball_has_hit_a_wall",
+                "=",
+                "\"true\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
                 "value": "CollisionNP"
               },
               "parameters": [
@@ -11528,6 +11626,17 @@
                 "\"can_hit_sat\""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"does_not_hit_a_sat\""
+              ],
+              "subInstructions": []
             }
           ],
           "events": [
@@ -12013,7 +12122,7 @@
           "comment2": ""
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -12093,20 +12202,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "sat_left",
-                    "Variable(row_one_50)",
-                    "Variable(first_sat_random_position)",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
                 {
                   "type": {
                     "inverted": false,
@@ -12654,7 +12749,7 @@
           "comment2": ""
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -13693,7 +13788,7 @@
           "comment2": ""
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -14334,7 +14429,7 @@
           "comment2": ""
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -14975,7 +15070,7 @@
           "comment2": ""
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -16014,7 +16109,7 @@
           "comment2": ""
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -18362,7 +18457,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "\nlet grid_size = 300;\n\nvar sat1_x = runtimeScene.getVariables().get(\"sat1_x_position\").getAsNumber();\nvar sat1_y = runtimeScene.getVariables().get(\"sat1_y_position\").getAsNumber();\nvar sat2_x = runtimeScene.getVariables().get(\"sat2_x_position\").getAsNumber();\nvar sat2_y = runtimeScene.getVariables().get(\"sat2_y_position\").getAsNumber();\n\nvar random_x = runtimeScene.getVariables().get(\"sat_random_position_x\").getAsNumber();\nvar random_y = runtimeScene.getVariables().get(\"sat_random_position_y\").getAsNumber();\n\n// Create left or right satellite\nvar sat_orientation = runtimeScene.getVariables().get(\"third_sat_orientation\").getAsNumber();\nlet right_or_left_sat = sat_orientation < 50 ? \"sat_right_2\" : \"sat_left_2\";\nvar created_sat = runtimeScene.createObject(right_or_left_sat);\ncreated_sat.setPosition(random_x, random_y);\ncreated_sat.setScale(runtimeScene.getVariables().get(\"satellite_scale\").getAsNumber());\n\n// initialize grid to all empty\nvar points_used = Array.from(Array(grid_size), () => new Array(grid_size));\nfor (let row = 50; row < grid_size; row+=100){\n    for (let col = 50; col < grid_size; col+=100){\n        points_used[row][col] = false;\n    }\n}\nlet random_num = Math.floor(Math.random() * 101); \n// location of already placed satellites\npoints_used[sat1_x][sat1_y] = true;\npoints_used[sat2_x][sat2_y] = true;\nlet grid = \"\";\nfor (let row = 50; row < grid_size; row+=100){\n    for (let col = 50; col < grid_size; col+=100){\n        grid += points_used[col][row] + \"\\t\";\n        if ((points_used[row][col] == true) && (row == random_x) && (col == random_y)){\n            created_sat.deleteFromScene(runtimeScene);\n            gdjs.RuntimeObject.setVariableString(runtimeScene.getObjects(\"debug_4\")[0], \"(\" + random_x + \", \" + random_y + \")\");\n            return;\n        }\n    }\n    grid += \"\\n\"\n}\n\ngdjs.RuntimeObject.setVariableString(runtimeScene.getObjects(\"debug_1\")[0], \"random num: \" + random_num);\ngdjs.RuntimeObject.setVariableString(runtimeScene.getObjects(\"debug_2\")[0], \"(\" + sat2_x + \", \" + sat2_y + \")\");\ngdjs.RuntimeObject.setVariableString(runtimeScene.getObjects(\"debug_3\")[0], \"(\" + random_x + \", \" + random_y + \")\");\ngdjs.RuntimeObject.setVariableString(runtimeScene.getObjects(\"debug_5\")[0], grid);\n\n\nruntimeScene.getVariables().get(\"sats_created\").setNumber(runtimeScene.getVariables().get(\"sats_created\").getAsNumber() + 1);\n\n",
+              "inlineCode": "\nlet grid_size = 400;\nlet possible_random_cell_values = [50, 150, 250, 350];\nvar ball_start_position = runtimeScene.getVariables().get(\"ball_start_position\").getAsNumber();\nvar sat_list = {};\n\n// Create first sat\nvar created_first_sat = runtimeScene.getVariables().get(\"created_first_sat\").getAsString();\nif (created_first_sat == \"false\"){\n    let first_sat_random_position = possible_random_cell_values[Math.floor(Math.random() * possible_random_cell_values.length)];\n    let first_sat_orientation = Math.floor(Math.random() * 100) < 50 ? \"sat_left\" : \"sat_right\";\n    var first_sat = runtimeScene.createObject(first_sat_orientation);\n    first_sat.setScale(runtimeScene.getVariables().get(\"satellite_scale\").getAsNumber());\n    sat_list[\"first_sat\"] = [50, 150];\n    if (ball_start_position == 1) sat_list[\"first_sat\"] = [50, first_sat_random_position];\n    if (ball_start_position == 2) sat_list[\"first_sat\"] = [150, first_sat_random_position];\n    if (ball_start_position == 3) sat_list[\"first_sat\"] = [250, first_sat_random_position];\n    if (ball_start_position == 4) sat_list[\"first_sat\"] = [350, first_sat_random_position];\n    if (ball_start_position == 5) sat_list[\"first_sat\"] = [first_sat_random_position, 50];\n    if (ball_start_position == 6) sat_list[\"first_sat\"] = [first_sat_random_position, 150];\n    if (ball_start_position == 7) sat_list[\"first_sat\"] = [first_sat_random_position, 250];\n    if (ball_start_position == 8) sat_list[\"first_sat\"] = [first_sat_random_position, 350];\n    if (ball_start_position == 9) sat_list[\"first_sat\"] = [350, first_sat_random_position];\n    if (ball_start_position == 10) sat_list[\"first_sat\"] = [250, first_sat_random_position];\n    if (ball_start_position == 11) sat_list[\"first_sat\"] = [150, first_sat_random_position];\n    if (ball_start_position == 12) sat_list[\"first_sat\"] = [50, first_sat_random_position];\n    if (ball_start_position == 13) sat_list[\"first_sat\"] = [first_sat_random_position, 350];\n    if (ball_start_position == 14) sat_list[\"first_sat\"] = [first_sat_random_position, 250];\n    if (ball_start_position == 15) sat_list[\"first_sat\"] = [first_sat_random_position, 150];\n    if (ball_start_position == 16) sat_list[\"first_sat\"] = [first_sat_random_position, 50];\n    gdjs.RuntimeObject.setVariableString(runtimeScene.getObjects(\"debug_1\")[0], \"random: \" + first_sat_random_position);\n    gdjs.RuntimeObject.setVariableString(runtimeScene.getObjects(\"debug_3\")[0], \"sat list: \" + sat_list[\"first_sat\"]);\n    \n    first_sat.setPosition(sat_list[\"first_sat\"][0], sat_list[\"first_sat\"][1]);\n    runtimeScene.getVariables().get(\"created_first_sat\").setString(\"true\");\n    gdjs.RuntimeObject.setVariableString(runtimeScene.getObjects(\"debug_2\")[0], \"created: \" + created_first_sat);\n}\n\n\nlet random_num = Math.floor(Math.random() * 101); \n\n\n// gdjs.RuntimeObject.setVariableString(runtimeScene.getObjects(\"debug_4\")[0], row_size);\n// gdjs.RuntimeObject.setVariableString(runtimeScene.getObjects(\"debug_5\")[0], grid);\n\n\nruntimeScene.getVariables().get(\"sats_created\").setNumber(runtimeScene.getVariables().get(\"sats_created\").getAsNumber() + 1);\n\n",
               "parameterObjects": "",
               "useStrict": true
             }
