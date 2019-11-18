@@ -892,7 +892,7 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.2926
+        "zoomFactor": 0.3826
       },
       "objectsGroups": [
         {
@@ -955,12 +955,6 @@
               "name": "sat_left"
             },
             {
-              "name": "sat_left_2"
-            },
-            {
-              "name": "sat_right_2"
-            },
-            {
               "name": "sat_right"
             }
           ]
@@ -970,38 +964,6 @@
         {
           "name": "level",
           "value": "2.1"
-        },
-        {
-          "name": "row_one_50",
-          "value": "50"
-        },
-        {
-          "name": "row_two_150",
-          "value": "150"
-        },
-        {
-          "name": "row_three_250",
-          "value": "250"
-        },
-        {
-          "name": "col_one_50",
-          "value": "50"
-        },
-        {
-          "name": "col_two_150",
-          "value": "150"
-        },
-        {
-          "name": "col_three_250",
-          "value": "250"
-        },
-        {
-          "name": "distance_between_cells",
-          "value": "100"
-        },
-        {
-          "name": "ball_is_moving",
-          "value": "\"false\""
         },
         {
           "name": "ball_has_hit_a_wall",
@@ -1014,10 +976,6 @@
         {
           "name": "ball_speed",
           "value": "150"
-        },
-        {
-          "name": "first_sat_orientation",
-          "value": "0"
         },
         {
           "name": "show_ball",
@@ -1054,54 +1012,6 @@
         {
           "name": "spaceship_scale",
           "value": ".25"
-        },
-        {
-          "name": "first_sat_random_position",
-          "value": "0"
-        },
-        {
-          "name": "second_sat_orientation",
-          "value": "0"
-        },
-        {
-          "name": "second_sat_random_position",
-          "value": "0"
-        },
-        {
-          "name": "third_sat_orientation",
-          "value": "0"
-        },
-        {
-          "name": "sat_random_position_x",
-          "value": "0"
-        },
-        {
-          "name": "sats_created",
-          "value": "0"
-        },
-        {
-          "name": "sat_random_position_y",
-          "value": "0"
-        },
-        {
-          "name": "num_sats_to_spawn",
-          "value": "2"
-        },
-        {
-          "name": "sat1_x_position",
-          "value": "0"
-        },
-        {
-          "name": "sat1_y_position",
-          "value": "0"
-        },
-        {
-          "name": "sat2_x_position",
-          "value": "0"
-        },
-        {
-          "name": "sat2_y_position",
-          "value": "0"
         },
         {
           "name": "created_first_sat",
@@ -1372,81 +1282,6 @@
           "x": 417,
           "y": -197,
           "zOrder": 47,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "debug_2",
-          "width": 0,
-          "x": -573,
-          "y": 82,
-          "zOrder": 48,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "debug_1",
-          "width": 0,
-          "x": -576,
-          "y": -59,
-          "zOrder": 49,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "debug_3",
-          "width": 0,
-          "x": -621,
-          "y": 239,
-          "zOrder": 52,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "debug_4",
-          "width": 0,
-          "x": -616,
-          "y": 484,
-          "zOrder": 53,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "debug_5",
-          "width": 0,
-          "x": 350,
-          "y": 530,
-          "zOrder": 54,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2313,6 +2148,285 @@
           ]
         },
         {
+          "bold": false,
+          "italic": false,
+          "name": "Score",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Score: ",
+          "font": "",
+          "characterSize": 80,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "name": "confirm",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "scale",
+              "value": ".30"
+            }
+          ],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "confirm.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "red_x",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "scale",
+              "value": ".2"
+            }
+          ],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "red_x",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "red_x-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "debug_1",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "debug text:",
+          "font": "",
+          "characterSize": 59,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "debug_2",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "debug_2: ",
+          "font": "",
+          "characterSize": 57,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "clicked_confirm_or_x",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Checkmark => confirm ball movement\nX                 => pick a different exit",
+          "font": "",
+          "characterSize": 54,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "name": "space_background",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "space_background.jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Level",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Level: ",
+          "font": "",
+          "characterSize": 80,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "debug_3",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "debug_3: ",
+          "font": "",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "debug_4",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "debug_4: ",
+          "font": "",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "debug_5",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "debug_5: ",
+          "font": "",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
           "name": "exit_1",
           "tags": "",
           "type": "Sprite",
@@ -3141,401 +3255,6 @@
           ]
         },
         {
-          "bold": false,
-          "italic": false,
-          "name": "Score",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Score: ",
-          "font": "",
-          "characterSize": 80,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "name": "confirm",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "name": "scale",
-              "value": ".30"
-            }
-          ],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "confirm.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "red_x",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "name": "scale",
-              "value": ".2"
-            }
-          ],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "red_x",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "red_x-1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "debug_1",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "debug text:",
-          "font": "",
-          "characterSize": 59,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "debug_2",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "debug_2: ",
-          "font": "",
-          "characterSize": 57,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "clicked_confirm_or_x",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Checkmark => confirm ball movement\nX                 => pick a different exit",
-          "font": "",
-          "characterSize": 54,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "name": "space_background",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "space_background.jpg",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Level",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Level: ",
-          "font": "",
-          "characterSize": 80,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "name": "sat_left_2",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "satellite_left.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 180,
-                        "y": 225
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 163.4,
-                            "y": 185.8
-                          },
-                          {
-                            "x": 229.176,
-                            "y": 185.647
-                          },
-                          {
-                            "x": 214.6,
-                            "y": 257.8
-                          },
-                          {
-                            "x": 153,
-                            "y": 245.8
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "sat_right_2",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "satellite_right.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 180,
-                        "y": 225
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 155.4,
-                            "y": 185
-                          },
-                          {
-                            "x": 213.8,
-                            "y": 184.2
-                          },
-                          {
-                            "x": 209,
-                            "y": 240.2
-                          },
-                          {
-                            "x": 145.2,
-                            "y": 246.8
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "debug_3",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "debug_3: ",
-          "font": "",
-          "characterSize": 60,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "debug_4",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "debug_4: ",
-          "font": "",
-          "characterSize": 60,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "debug_5",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "debug_5: ",
-          "font": "",
-          "characterSize": 60,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
           "name": "exit_13",
           "tags": "",
           "type": "Sprite",
@@ -3856,18 +3575,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarSceneTxt"
-              },
-              "parameters": [
-                "ball_is_moving",
-                "=",
-                "\"false\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "ResetTimer"
               },
               "parameters": [
@@ -3909,19 +3616,7 @@
               "parameters": [
                 "ball_start_position",
                 "=",
-                "8"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "first_sat_orientation",
-                "=",
-                "RandomInRange(0, 100)"
+                "RandomInRange(1, 16)"
               ],
               "subInstructions": []
             },
@@ -3986,30 +3681,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "second_sat_orientation",
-                "=",
-                "RandomInRange(0, 100)"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "sats_created",
-                "=",
-                "0"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "ModVarSceneTxt"
               },
               "parameters": [
@@ -4062,20 +3733,7 @@
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarSceneTxt"
-              },
-              "parameters": [
-                "ball_is_moving",
-                "=",
-                "\"false\""
-              ],
-              "subInstructions": []
-            }
-          ],
+          "conditions": [],
           "actions": [
             {
               "type": {
@@ -4272,49 +3930,26 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right_2",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Timer"
                   },
                   "parameters": [
                     "",
                     ".2",
                     "\"can_hit_sat\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "sat_right",
+                    "",
+                    "",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -4366,130 +4001,45 @@
                     "yes"
                   ],
                   "subInstructions": []
-                }
-              ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SeparateFromObjects"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "Variable(ball_speed)",
-                        "0",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"can_hit_sat\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right_2",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "sat_right",
+                    ""
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SeparateFromObjects"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right_2",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "Variable(ball_speed)",
-                        "0",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"can_hit_sat\""
-                      ],
-                      "subInstructions": []
-                    }
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "Variable(ball_speed)",
+                    "0",
+                    "1"
                   ],
-                  "events": []
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"can_hit_sat\""
+                  ],
+                  "subInstructions": []
                 }
-              ]
+              ],
+              "events": []
             },
             {
               "disabled": false,
@@ -4499,49 +4049,26 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left_2",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Timer"
                   },
                   "parameters": [
                     "",
                     ".2",
                     "\"can_hit_sat\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "sat_left",
+                    "",
+                    "",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -4593,130 +4120,45 @@
                     "yes"
                   ],
                   "subInstructions": []
-                }
-              ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SeparateFromObjects"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "-Variable(ball_speed)",
-                        "0",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"can_hit_sat\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left_2",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "sat_left",
+                    ""
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SeparateFromObjects"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left_2",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "-Variable(ball_speed)",
-                        "0",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"can_hit_sat\""
-                      ],
-                      "subInstructions": []
-                    }
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "-Variable(ball_speed)",
+                    "0",
+                    "1"
                   ],
-                  "events": []
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"can_hit_sat\""
+                  ],
+                  "subInstructions": []
                 }
-              ]
+              ],
+              "events": []
             }
           ]
         },
@@ -4760,49 +4202,26 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right_2",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Timer"
                   },
                   "parameters": [
                     "",
                     ".2",
                     "\"can_hit_sat\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "sat_right",
+                    "",
+                    "",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -4854,130 +4273,45 @@
                     "yes"
                   ],
                   "subInstructions": []
-                }
-              ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SeparateFromObjects"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "-Variable(ball_speed)",
-                        "0",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"can_hit_sat\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right_2",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "sat_right",
+                    ""
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SeparateFromObjects"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right_2",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "-Variable(ball_speed)",
-                        "0",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"can_hit_sat\""
-                      ],
-                      "subInstructions": []
-                    }
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "-Variable(ball_speed)",
+                    "0",
+                    "1"
                   ],
-                  "events": []
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"can_hit_sat\""
+                  ],
+                  "subInstructions": []
                 }
-              ]
+              ],
+              "events": []
             },
             {
               "disabled": false,
@@ -4987,49 +4321,26 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left_2",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Timer"
                   },
                   "parameters": [
                     "",
                     ".2",
                     "\"can_hit_sat\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "sat_left",
+                    "",
+                    "",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -5081,130 +4392,45 @@
                     "yes"
                   ],
                   "subInstructions": []
-                }
-              ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SeparateFromObjects"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "Variable(ball_speed)",
-                        "0",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"can_hit_sat\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left_2",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "sat_left",
+                    ""
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SeparateFromObjects"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left_2",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "Variable(ball_speed)",
-                        "0",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"can_hit_sat\""
-                      ],
-                      "subInstructions": []
-                    }
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "Variable(ball_speed)",
+                    "0",
+                    "1"
                   ],
-                  "events": []
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"can_hit_sat\""
+                  ],
+                  "subInstructions": []
                 }
-              ]
+              ],
+              "events": []
             }
           ]
         },
@@ -5248,49 +4474,26 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right_2",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Timer"
                   },
                   "parameters": [
                     "",
                     ".2",
                     "\"can_hit_sat\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "sat_right",
+                    "",
+                    "",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -5342,130 +4545,45 @@
                     "yes"
                   ],
                   "subInstructions": []
-                }
-              ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SeparateFromObjects"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "0",
-                        "-Variable(ball_speed)",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"can_hit_sat\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right_2",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "sat_right",
+                    ""
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SeparateFromObjects"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right_2",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "0",
-                        "-Variable(ball_speed)",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"can_hit_sat\""
-                      ],
-                      "subInstructions": []
-                    }
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "0",
+                    "-Variable(ball_speed)",
+                    "1"
                   ],
-                  "events": []
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"can_hit_sat\""
+                  ],
+                  "subInstructions": []
                 }
-              ]
+              ],
+              "events": []
             },
             {
               "disabled": false,
@@ -5475,49 +4593,26 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left_2",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Timer"
                   },
                   "parameters": [
                     "",
                     ".2",
                     "\"can_hit_sat\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "sat_left",
+                    "",
+                    "",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -5569,130 +4664,45 @@
                     "yes"
                   ],
                   "subInstructions": []
-                }
-              ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SeparateFromObjects"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "0",
-                        "Variable(ball_speed)",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"can_hit_sat\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left_2",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "sat_left",
+                    ""
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SeparateFromObjects"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left_2",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "0",
-                        "Variable(ball_speed)",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"can_hit_sat\""
-                      ],
-                      "subInstructions": []
-                    }
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "0",
+                    "Variable(ball_speed)",
+                    "1"
                   ],
-                  "events": []
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"can_hit_sat\""
+                  ],
+                  "subInstructions": []
                 }
-              ]
+              ],
+              "events": []
             }
           ]
         },
@@ -5736,49 +4746,26 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right_2",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Timer"
                   },
                   "parameters": [
                     "",
                     ".2",
                     "\"can_hit_sat\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "sat_right",
+                    "",
+                    "",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -5830,130 +4817,45 @@
                     "yes"
                   ],
                   "subInstructions": []
-                }
-              ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SeparateFromObjects"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "0",
-                        "Variable(ball_speed)",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"can_hit_sat\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right_2",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "sat_right",
+                    ""
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SeparateFromObjects"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_right_2",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "0",
-                        "Variable(ball_speed)",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"can_hit_sat\""
-                      ],
-                      "subInstructions": []
-                    }
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "0",
+                    "Variable(ball_speed)",
+                    "1"
                   ],
-                  "events": []
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"can_hit_sat\""
+                  ],
+                  "subInstructions": []
                 }
-              ]
+              ],
+              "events": []
             },
             {
               "disabled": false,
@@ -5963,49 +4865,26 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left_2",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Timer"
                   },
                   "parameters": [
                     "",
                     ".2",
                     "\"can_hit_sat\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "sat_left",
+                    "",
+                    "",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -6057,130 +4936,45 @@
                     "yes"
                   ],
                   "subInstructions": []
-                }
-              ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SeparateFromObjects"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "0",
-                        "-Variable(ball_speed)",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"can_hit_sat\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left_2",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "sat_left",
+                    ""
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SeparateFromObjects"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "sat_left_2",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "spaceship",
-                        "0",
-                        "-Variable(ball_speed)",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"can_hit_sat\""
-                      ],
-                      "subInstructions": []
-                    }
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "spaceship",
+                    "0",
+                    "-Variable(ball_speed)",
+                    "1"
                   ],
-                  "events": []
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"can_hit_sat\""
+                  ],
+                  "subInstructions": []
                 }
-              ]
+              ],
+              "events": []
             }
           ]
         },
@@ -9036,7 +7830,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"4x4 4 sats\"",
+                    "\"4x4 5 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -9194,7 +7988,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"4x4 4 sats\"",
+                    "\"4x4 5 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -9352,7 +8146,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"4x4 4 sats\"",
+                    "\"4x4 5 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -9510,7 +8304,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"4x4 4 sats\"",
+                    "\"4x4 5 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -9668,7 +8462,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"4x4 4 sats\"",
+                    "\"4x4 5 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -9826,7 +8620,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"4x4 4 sats\"",
+                    "\"4x4 5 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -9984,7 +8778,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"4x4 4 sats\"",
+                    "\"4x4 5 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -10142,7 +8936,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"4x4 4 sats\"",
+                    "\"4x4 5 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -10300,7 +9094,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"4x4 4 sats\"",
+                    "\"4x4 5 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -10458,7 +9252,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"4x4 4 sats\"",
+                    "\"4x4 5 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -10616,7 +9410,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"4x4 4 sats\"",
+                    "\"4x4 5 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -10774,7 +9568,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"4x4 4 sats\"",
+                    "\"4x4 5 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -10932,7 +9726,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"4x4 4 sats\"",
+                    "\"4x4 5 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -11090,7 +9884,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"4x4 4 sats\"",
+                    "\"4x4 5 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -11248,7 +10042,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"4x4 4 sats\"",
+                    "\"4x4 5 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -11406,7 +10200,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"4x4 4 sats\"",
+                    "\"4x4 5 sats\"",
                     "yes"
                   ],
                   "subInstructions": []
@@ -11590,17 +10384,6 @@
               "parameters": [
                 "",
                 "\"can_hit_sat\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"does_not_hit_a_sat\""
               ],
               "subInstructions": []
             }
@@ -12071,96 +10854,6 @@
             }
           ],
           "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Spawn walls vertically first column",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Spawn walls vertically second column",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Spawn walls vertically third column",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Spawn walls horizontally first row",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Spawn walls horizontally second row",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Spawn walls horizontally third row",
-          "comment2": ""
         },
         {
           "disabled": false,
@@ -13829,18 +12522,6 @@
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarScene"
-              },
-              "parameters": [
-                "sats_created",
-                "<",
-                "1"
-              ],
-              "subInstructions": []
-            },
             {
               "type": {
                 "inverted": false,
