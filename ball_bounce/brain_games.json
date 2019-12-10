@@ -13,7 +13,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.gamename",
-    "projectFile": "C:\\Users\\Owner\\Desktop\\CS\\senior_project\\ball_bounce\\braing_games.json",
+    "projectFile": "C:\\Users\\Owner\\Desktop\\CS\\senior_project\\ball_bounce\\brain_games.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -891,6 +891,15 @@
         "name": "main_menu.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "text_wall-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "text_wall-1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1071,15 +1080,30 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 257,
           "layer": "",
           "locked": false,
-          "name": "title",
-          "width": 0,
-          "x": -475,
-          "y": 167,
-          "zOrder": -826,
+          "name": "explanation",
+          "width": 2177,
+          "x": -429,
+          "y": 178,
+          "zOrder": -809,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 587,
+          "layer": "",
+          "locked": false,
+          "name": "text_wall",
+          "width": 1710,
+          "x": -471,
+          "y": 159,
+          "zOrder": -825,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1849,16 +1873,16 @@
         {
           "bold": false,
           "italic": false,
-          "name": "title",
+          "name": "explanation",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "Text about how the game improves memory",
+          "string": "Ricochet Rocketship helps mainly one type of memory and that is your \nworking memory. The goal is help your memory beyond simple \nmemorization by forcing you to have to analyze your temporary \nmemories if you want to answer correctly. \n\nWorking memory on its own is basically used for temporarily storing \nand manipulating information. It is a subset of the well known term,\n \"short-term memory\" and is how we process our consciousness and \nthings like lanaguage.\n",
           "font": "",
-          "characterSize": 80,
+          "characterSize": 53,
           "color": {
             "b": 255,
             "g": 255,
@@ -2192,6 +2216,45 @@
               ]
             }
           ]
+        },
+        {
+          "name": "text_wall",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "text_wall-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -2482,7 +2545,7 @@
           "width": 0,
           "x": -1449,
           "y": -788,
-          "zOrder": -832,
+          "zOrder": -953,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2508,11 +2571,11 @@
           "height": 695,
           "layer": "",
           "locked": false,
-          "name": "title",
-          "width": 1586,
-          "x": 145,
-          "y": -14,
-          "zOrder": -828,
+          "name": "explanation",
+          "width": 1782,
+          "x": -442,
+          "y": 17,
+          "zOrder": -706,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2573,6 +2636,21 @@
           "x": 14,
           "y": -538,
           "zOrder": -824,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 433,
+          "layer": "",
+          "locked": false,
+          "name": "text_wall",
+          "width": 1747,
+          "x": -481,
+          "y": -1,
+          "zOrder": -827,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3976,20 +4054,20 @@
         {
           "bold": false,
           "italic": false,
-          "name": "title",
+          "name": "explanation",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "Any number of satellites will be \nspawned somewhere in the grid. \nThey will disappear after a certain\n amount of time and it is your \njob to remember where they were.\n\nThen the spaceship will spawn randomly \naround any of the numbered exits. You \nthen choose the exit you thing the spaceship will end \nup at based on how it collides with the satellites.",
+          "string": "Any number of satellites will be spawned somewhere in the grid. They will disappear after a \ncertain amount of time and it is your job to remember where they were.\n\nThen the spaceship will spawn randomly around any of the numbered exits. You \nthen choose the exit you think the spaceship will end up at based on how it collides with the satellites.\n\nThe rocket rebounds off of the satellites at a 90 degree angle as shown below. The rocket was\ninitially moving to the right and then it hits a right-oriented satellite and thus will bounce upward.",
           "font": "",
           "characterSize": 40,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           }
         },
         {
@@ -4222,6 +4300,45 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "main_menu.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "text_wall",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "text_wall",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "text_wall-1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -4585,8 +4702,8 @@
           "locked": false,
           "name": "title",
           "width": 0,
-          "x": -660,
-          "y": -274,
+          "x": -265,
+          "y": -308,
           "zOrder": -831,
           "numberProperties": [],
           "stringProperties": [],
@@ -5409,7 +5526,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "Welcome to Jarod's Memory Boosting Spaceship Game! ",
+          "string": "Welcome to Jarod's Memory Boosting \nSpaceship Game, Rocketship Ricochet!",
           "font": "",
           "characterSize": 80,
           "color": {
@@ -8686,7 +8803,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Control ball movement",
+          "comment": "Control rocketship movement",
           "comment2": ""
         },
         {
@@ -38550,7 +38667,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Control ball movement",
+          "comment": "Control rocketship movement",
           "comment2": ""
         },
         {
